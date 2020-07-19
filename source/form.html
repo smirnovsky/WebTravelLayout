@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Погнали</title>
+  </head>
+  <body>
+    <header>
+      <h1>Погнали?</h1>
+        <button>burger_button</button>
+    </header>
+
+    <h2>Направления</h2>
+    <section>
+      <p>80 level</p>
+      <img src="https://via.placeholder.com/150x150" alt="photo">
+      <button>Сменить фото</button>
+      
+      <h3>Тэги</h3>
+      <p>#бургер #бар #футбол #концерт #крафт</p>
+
+      <h3>Транспорт</h3>
+      <a href="">Plane</a>
+      <a href="">Bus</a>
+      <a href="">Bike</a>
+      <a href="">Legs</a>
+    </section>
+
+    <section>
+      <h3>Мои планы:</h3>
+        <ol>
+          <li>Франция, Италия <br> 3 попутчика <br> 26 мар — 29 мар <br>
+            <button>Изменить</button>
+          </li>
+
+          <li>Таиланд, Индонезия <br> 1 попутчик <br> 1 июл — 15 июл <br>
+            <button>Изменить</button>
+          </li>
+        </ol>
+    </section>
+
+    <h3>Добавить план</h3>
+
+    <div>
+      <p>Шаг 1. Даты пребывания</p>
+      <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <p>Ищу попутчиков:  Чел.</p>
+        <input name="companion" type="number">
+
+        <p>длительность:  Дн.</p>
+        <input name="days" type="number">
+
+        <p><input name="check" type="checkbox" value="with children">Можно с детьми</p>
+
+        <p>Select date</p>
+        <input name="date" type="date">
+
+        <input type="submit" value="Следующий шаг">
+      </form>
+    </div>
+
+    <div>
+      <p>Шаг 2. Маршрут</p>
+      <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <p>
+          <select name="country1">
+            <option>Босния и Герцеговина</option>
+            <option>Чехия</option>
+          </select>
+        </p>
+
+        <p>
+          <select name="country2">
+            <option>Чехия</option>
+            <option>Босния и Герцеговина</option>
+          </select>
+        </p>
+        
+        <p>
+          <select name="country3">
+            <option>Выберите страну</option>
+            <option>Босния и Герцеговина</option>
+            <option>Чехия</option>
+          </select>
+        </p>  
+
+        <a href="">Добавить страну</a>
+
+        <input type="submit" value="Следующий шаг">
+        <a href="">На шаг назад</a> 
+      </form>
+    </div>
+
+    <div>
+      <p>Шаг 3. Развлечения</p>
+      <p>Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <p>Босния и Герцеговина</p>
+        <textarea name="Bosnia" cols="30" rows="10"></textarea>
+
+        <p>Чехия</p>
+        <textarea name="Czech" cols="30" rows="10"></textarea>
+        <input type="submit" value="Отправить">
+        <a href="">На шаг назад</a> 
+      </form>
+    </div>
+   
+    <footer>
+      <h2>Погнали?</h2>
+
+      <p>
+        <a href="facebook.com">facebook</a>
+        <a href="vk.com">VK</a>
+        <a href="instagram.com">Instagram</a>
+      </p>
+
+
+    
+      <p>Разработано
+        <a href="https://htmlacademy.ru/">HTML</a>
+      </p>
+    </footer>
+  </body>  
