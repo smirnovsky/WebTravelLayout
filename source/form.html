@@ -6,109 +6,116 @@
   </head>
   <body>
     <header>
-      <h1>Погнали?</h1>
-        <button>burger_button</button>
-    </header>
+      <img src="https://via.placeholder.com/150x150" alt="Pogmali">
+      <button type="button">burger_button</button>
+      <div>
+        <img src="https://via.placeholder.com/150x150" alt="Pogmali burger">
+      </div>
+      <div>
+        <a href="">О сервисе</a>
+        <a href="">Направления</a>
+        <a href="">Попутчики</a>
+        <a href="">Авторизация</a>
+      </div>
+      <div>
+        <a href="tel:88005558628">8 800 555-86-28</a>
+        <a href="">mail@htmlacademy.ru</a>
+      </div>
+      <div>
+        <a href="facebook.com">facebook</a>
+        <a href="vk.com">VK</a>
+        <a href="instagram.com">Instagram</a>
+      </div>
+  </header>
 
-    <h2>Направления</h2>
+    <h1>Направления</h1>
     <section>
       <p>80 level</p>
       <img src="https://via.placeholder.com/150x150" alt="photo">
       <button>Сменить фото</button>
-      
+
       <h3>Тэги</h3>
-      <p>#бургер #бар #футбол #концерт #крафт</p>
+      <textarea>#бургер #бар #футбол #концерт #крафт</textarea>
 
       <h3>Транспорт</h3>
-      <a href="">Plane</a>
-      <a href="">Bus</a>
-      <a href="">Bike</a>
-      <a href="">Legs</a>
+      <a href="">Самолет</a>
+      <a href="">Автобус</a>
+      <a href="">Велосипед</a>
+      <a href="">Пешком</a>
     </section>
 
     <section>
       <h3>Мои планы:</h3>
-        <ol>
-          <li>Франция, Италия <br> 3 попутчика <br> 26 мар — 29 мар <br>
-            <button>Изменить</button>
-          </li>
+        <div>
+          <p>1. Франция, Италия</p>
+          <p>26 мар — 29 мар</p>
+          <p>3 попутчика</p>
+          <a href="#">Изменить</a>
+        </div>
 
-          <li>Таиланд, Индонезия <br> 1 попутчик <br> 1 июл — 15 июл <br>
-            <button>Изменить</button>
-          </li>
-        </ol>
+        <div>
+          <p>2. Таиланд, Индонезия</p>
+          <p>1 попутчик</p>
+          <p>1 июл — 15 июл</p>
+          <a href="#">Изменить</a> 
+        </div>
     </section>
 
     <h3>Добавить план</h3>
 
-    <div>
-      <p>Шаг 1. Даты пребывания</p>
-      <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
       <form action="https://echo.htmlacademy.ru/" method="GET">
-        <p>Ищу попутчиков:  Чел.</p>
-        <input name="companion" type="number">
+        <div>
+          <a name="step1"></a>
+          <p>Шаг 1. Даты пребывания</p>
+          <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+          
+            <p>Ищу попутчиков:</p>
+            <p>Чел.</p>
+            <input name="companion" type="number">
+            <button type="button">+</button>
+            <button type="button">-</button>
 
-        <p>длительность:  Дн.</p>
-        <input name="days" type="number">
+            <p>длительность:</p>
+            <p>Дн.</p>
+            <input name="days" type="number">
+            <button type="button">+</button>
+            <button type="button">-</button>
 
-        <p><input name="check" type="checkbox" value="with children">Можно с детьми</p>
+            <p><input name="check" type="checkbox" value="with children">Можно с детьми</p>
 
-        <p>Select date</p>
-        <input name="date" type="date">
+            <p class="visually_hidden">Выбор даты</p>
+            <!-- тут должен быть календарь выбора дат -->
 
-        <input type="submit" value="Следующий шаг">
+            <a href="#step2">Следующий шаг</a>
+        </div>
+
+        <div>
+          <a name="step2"></a>
+          <p>Шаг 2. Маршрут</p>
+          <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+          <!-- тут должен быть элемент выбора стран -->
+
+            <button type="button">Добавить страну</button>
+
+            <a href="#step3">Следующий шаг</a>
+            <a href="#step1">На шаг назад</a> 
+        </div>
+
+        <div>
+          <a name="step3"></a>
+          <p>Шаг 3. Развлечения</p>
+          <p>Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+            <p>Босния и Герцеговина</p>
+            <textarea name="Bosnia" placeholder="План действий"></textarea>
+
+            <p>Чехия</p>
+            <textarea name="Czech" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
+            <input type="submit" value="Отправить">
+            <a href="#step2" >На шаг назад</a> 
+        </div>
       </form>
-    </div>
 
-    <div>
-      <p>Шаг 2. Маршрут</p>
-      <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
 
-      <form action="https://echo.htmlacademy.ru/" method="GET">
-        <p>
-          <select name="country1">
-            <option>Босния и Герцеговина</option>
-            <option>Чехия</option>
-          </select>
-        </p>
-
-        <p>
-          <select name="country2">
-            <option>Чехия</option>
-            <option>Босния и Герцеговина</option>
-          </select>
-        </p>
-        
-        <p>
-          <select name="country3">
-            <option>Выберите страну</option>
-            <option>Босния и Герцеговина</option>
-            <option>Чехия</option>
-          </select>
-        </p>  
-
-        <a href="">Добавить страну</a>
-
-        <input type="submit" value="Следующий шаг">
-        <a href="">На шаг назад</a> 
-      </form>
-    </div>
-
-    <div>
-      <p>Шаг 3. Развлечения</p>
-      <p>Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-
-      <form action="https://echo.htmlacademy.ru/" method="GET">
-        <p>Босния и Герцеговина</p>
-        <textarea name="Bosnia" cols="30" rows="10"></textarea>
-
-        <p>Чехия</p>
-        <textarea name="Czech" cols="30" rows="10"></textarea>
-        <input type="submit" value="Отправить">
-        <a href="">На шаг назад</a> 
-      </form>
-    </div>
-   
     <footer>
       <h2>Погнали?</h2>
 
