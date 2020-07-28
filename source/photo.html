@@ -6,20 +6,19 @@
   </head>
   <body>
     <header>
-        <img src="https://via.placeholder.com/150x150" alt="Pogmali">
-        <button type="button">burger_button</button>
-        <div>
-          <img src="https://via.placeholder.com/150x150" alt="Pogmali burger">
-        </div>
-        <div>
-          <a href="">О сервисе</a>
-          <a href="">Направления</a>
-          <a href="">Попутчики</a>
-          <a href="">Авторизация</a>
-        </div>
+        <img src="https://via.placeholder.com/150x150" alt="Погнали?">
+        <button type="button">Меню</button>
+        <nav>
+          <ul>
+            <li><a href="">О сервисе</a></li>
+            <li><a href="">Направления</a></li>
+            <li><a href="">Попутчики</a></li>
+            <li><a href="">Авторизация</a></li>
+          </ul>
+        </nav>
         <div>
           <a href="tel:88005558628">8 800 555-86-28</a>
-          <a href="">mail@htmlacademy.ru</a>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div>
           <a href="facebook.com">facebook</a>
@@ -35,31 +34,28 @@
     </section>
 
     <section>
-      <h3 class="visually-hidden">Choose</h3>
+      <h3 class="visually-hidden">Выбор попутчика</h3>
       <p>Подберите идеального попутчика</p>
       <form action="https://echo.htmlacademy.ru/" method="GET">
 
         <p>Хобби</p>
 
         <p>Музыка</p>
-          <ul>
-              <li>Тяжелый рок</li>
-              <li>Русский рэп</li>
-              <li>Евродэнс</li>
-          </ul>
+          <input name="HardRock" type="checkbox">Тяжелый рок
+          <input name="RussianRap" type="checkbox">Русский рэп
+          <input name="Evrodance" type="checkbox">Евродэнс
 
         <p>Еда</p>
 
         <p>Транспорт</p>
-          <ul>
-              <li>Самолет</li>
-              <li>Автобус</li>
-              <li>Велосипед</li>
-              <li>Пешком</li>
-          </ul>
+          <input name="Plane" type="checkbox">Самолет
+          <input name="Bus" type="checkbox">Автобус
+          <input name="Bike" type="checkbox">Велосипед
+          <input name="Walk" type="checkbox">Пешком
+
 
         <p>Левел
-          <input name="lvl" type="range" min="1" max="100" value="30">
+          <!-- Тут должен быть кастомный мультиселект -->
         </p>
 
         <input type="submit" value="Показать">

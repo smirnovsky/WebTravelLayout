@@ -6,20 +6,19 @@
   </head>
   <body>
     <header>
-      <img src="https://via.placeholder.com/150x150" alt="Pogmali">
-      <button type="button">burger_button</button>
-      <div>
-        <img src="https://via.placeholder.com/150x150" alt="Pogmali burger">
-      </div>
-      <div>
-        <a href="">О сервисе</a>
-        <a href="">Направления</a>
-        <a href="">Попутчики</a>
-        <a href="">Авторизация</a>
-      </div>
+      <img src="https://via.placeholder.com/150x150" alt="Погнали?">
+      <button type="button">Меню</button>
+      <nav>
+        <ul>
+          <li><a href="">О сервисе</a></li>
+          <li><a href="">Направления</a></li>
+          <li><a href="">Попутчики</a></li>
+          <li><a href="">Авторизация</a></li>
+        </ul>
+      </nav>
       <div>
         <a href="tel:88005558628">8 800 555-86-28</a>
-        <a href="">mail@htmlacademy.ru</a>
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
       <div>
         <a href="facebook.com">facebook</a>
@@ -64,8 +63,7 @@
     <h3>Добавить план</h3>
 
       <form action="https://echo.htmlacademy.ru/" method="GET">
-        <div>
-            <a name="step1"></a>
+        <div id="step1">
             <p>Шаг 1. Даты пребывания</p>
             <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
             <p>Ищу попутчиков:</p>
@@ -88,8 +86,7 @@
             <a href="#step2">Следующий шаг</a>
         </div>
 
-        <div>
-          <a name="step2"></a>
+        <div id="step2">
           <p>Шаг 2. Маршрут</p>
           <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
           <!-- тут должен быть элемент выбора стран -->
@@ -99,17 +96,16 @@
           <a href="#step1">На шаг назад</a>
         </div>
 
-        <div>
-          <a name="step3"></a>
+        <div id="step3">
           <p>Шаг 3. Развлечения</p>
-          <p>Наконец, расскажите о своих планахвремяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+          <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
           <p>Босния и Герцеговина</p>
           <textarea name="Bosnia" placeholder="План действий"></textarea>
 
           <p>Чехия</p>
           <textarea name="Czech" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
           <input type="submit" value="Отправить">
-          <a href="#step2" >На шаг назад</a> 
+          <a href="#step2" >На шаг назад</a>
         </div>
       </form>
 
@@ -124,9 +120,9 @@
       </p>
 
 
-    
+
       <p>Разработано
         <a href="https://htmlacademy.ru/">HTML</a>
       </p>
     </footer>
-  </body>  
+  </body>
