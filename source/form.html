@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Погнали</title>
+  </head>
+  <body>
+    <header>
+      <img src="https://via.placeholder.com/150x150" alt="Погнали?">
+      <button type="button">Меню</button>
+      <nav>
+        <ul>
+          <li><a href="">О сервисе</a></li>
+          <li><a href="">Направления</a></li>
+          <li><a href="">Попутчики</a></li>
+          <li><a href="">Авторизация</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="tel:88005558628">8 800 555-86-28</a>
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </div>
+      <div>
+        <a href="facebook.com">facebook</a>
+        <a href="vk.com">VK</a>
+        <a href="instagram.com">Instagram</a>
+      </div>
+  </header>
+
+    <h1>Направления</h1>
+    <section>
+      <p>80 level</p>
+      <img src="https://via.placeholder.com/150x150" alt="photo">
+      <button>Сменить фото</button>
+
+      <h3>Тэги</h3>
+      <textarea>#бургер #бар #футбол #концерт #крафт</textarea>
+
+      <h3>Транспорт</h3>
+      <a href="">Самолет</a>
+      <a href="">Автобус</a>
+      <a href="">Велосипед</a>
+      <a href="">Пешком</a>
+    </section>
+
+    <section>
+      <h3>Мои планы:</h3>
+        <div>
+          <p>1. Франция, Италия</p>
+          <p>26 мар — 29 мар</p>
+          <p>3 попутчика</p>
+          <a href="#">Изменить</a>
+        </div>
+
+        <div>
+          <p>2. Таиланд, Индонезия</p>
+          <p>1 попутчик</p>
+          <p>1 июл — 15 июл</p>
+          <a href="#">Изменить</a>
+        </div>
+    </section>
+
+    <h3>Добавить план</h3>
+
+      <form action="https://echo.htmlacademy.ru/" method="GET">
+        <div id="step1">
+            <p>Шаг 1. Даты пребывания</p>
+            <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <p>Ищу попутчиков:</p>
+            <p>Чел.</p>
+            <input name="companion" type="number">
+            <button type="button">+</button>
+            <button type="button">-</button>
+
+            <p>длительность:</p>
+            <p>Дн.</p>
+            <input name="days" type="number">
+            <button type="button">+</button>
+            <button type="button">-</button>
+
+            <p><input name="check" type="checkbox" value="with children">Можно с детьми</p>
+
+            <p class="visually_hidden">Выбор даты</p>
+            <!-- тут должен быть календарь выбора дат -->
+
+            <a href="#step2">Следующий шаг</a>
+        </div>
+
+        <div id="step2">
+          <p>Шаг 2. Маршрут</p>
+          <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+          <!-- тут должен быть элемент выбора стран -->
+          <button type="button">Добавить страну</button>
+
+          <a href="#step3">Следующий шаг</a>
+          <a href="#step1">На шаг назад</a>
+        </div>
+
+        <div id="step3">
+          <p>Шаг 3. Развлечения</p>
+          <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+          <p>Босния и Герцеговина</p>
+          <textarea name="Bosnia" placeholder="План действий"></textarea>
+
+          <p>Чехия</p>
+          <textarea name="Czech" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
+          <input type="submit" value="Отправить">
+          <a href="#step2" >На шаг назад</a>
+        </div>
+      </form>
+
+
+    <footer>
+      <h2>Погнали?</h2>
+
+      <p>
+        <a href="facebook.com">facebook</a>
+        <a href="vk.com">VK</a>
+        <a href="instagram.com">Instagram</a>
+      </p>
+
+
+
+      <p>Разработано
+        <a href="https://htmlacademy.ru/">HTML</a>
+      </p>
+    </footer>
+  </body>
