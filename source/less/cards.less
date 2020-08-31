@@ -1,16 +1,148 @@
 .cards {
-  background-color: var(--basic-blue);
+  background-color: @basic-blue;
 }
 
-.cards__header {
-  font-family: Blogger Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 36px;
-  color: #FFFFFF;
+@media (min-width: @mobile_width){
+  .cards__header {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+  }
+
+  .cards__button-main {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .cards__filter{
+    background-color: @basic_yellow;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+  }
+
+  .cards__filter-header {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: @basic-blue;
+  }
+
+  .cards__filter-section {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-blue;
+  }
+
+  .cards__filter-items-music {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards__filter-items-hobbie {
+    display: none;
+  }
+
+  .cards__filter-items-food {
+    display: none;
+  }
+
+  .cards__filter-items {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: black;
+  }
 }
 
-.cards_bg {
-  background-color: var(--basic_blue_light);
+@media (min-width: @tablet_width){
+  .cards__header {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 20px;
+    color: #FFFFFF;
+  }
+
+  .cards__grid {
+    display: flex;
+    align-items: center;
+  }
+
+  .cards__button-main {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  .cards__filter{
+    background-color: @basic_yellow;
+  }
+
+  .cards__filter-header {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: @basic-blue;
+  }
+
+  .cards__filter-section {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @basic-blue;
+  }
+
+  .cards__filter-items-music {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cards__filter-items-hobbie {
+    display: none;
+  }
+
+  .cards__filter-items-food {
+    display: none;
+  }
+
+  .cards__filter-items {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+  }
 }

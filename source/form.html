@@ -30,10 +30,10 @@
       </div>
     </header>
 
-    <h1>Направления</h1>
-    <section>
-      <p>80 level</p>
-      <img src="https://via.placeholder.com/150x150" alt="photo">
+    <h1 class="form-profile__header">Направления</h1>
+    <section class="form-profile__bg">
+      <p class="form-profile__lvl-number">80 level</p>
+      <img class="form-profile__photo" src="./img/demin-mobile@1x.jpg" alt="photo">
       <button>Сменить фото</button>
 
       <h3>Тэги</h3>
@@ -46,36 +46,36 @@
       <a href="">Пешком</a>
     </section>
 
-    <section>
-      <h3>Мои планы:</h3>
-        <div>
-          <p>1. Франция, Италия</p>
-          <p>26 мар — 29 мар</p>
-          <p>3 попутчика</p>
-          <a href="#">Изменить</a>
+    <section class="myplans__bg">
+      <h3 class="myplans__header">Мои планы:</h3>
+        <div class="myplans__countries">
+          <p class="myplans__countries-header">1. Франция, Италия</p>
+          <p class="myplans__countries-text">3 попутчика</p>
+          <p class="myplans__countries-text">26 мар — 29 мар</p>
+          <a  class="myplans__countries-button" href="#">Изменить</a>
         </div>
 
-        <div>
-          <p>2. Таиланд, Индонезия</p>
-          <p>1 попутчик</p>
-          <p>1 июл — 15 июл</p>
-          <a href="#">Изменить</a>
+        <div class="myplans__countries">
+          <p class="myplans__countries-header">2. Таиланд, Индонезия</p>
+          <p class="myplans__countries-text">1 попутчик</p>
+          <p class="myplans__countries-text">1 июл — 15 июл</p>
+          <a class="myplans__countries-button" href="#">Изменить</a>
         </div>
     </section>
 
-    <h3>Добавить план</h3>
-
+    <section class="addplans__bg">
+      <h3 class="addplans__header">Добавить план</h3>
       <form action="https://echo.htmlacademy.ru/" method="GET">
-        <div id="step1">
-            <p>Шаг 1. Даты пребывания</p>
-            <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-            <p>Ищу попутчиков:</p>
+        <div class="addplans__step1" id="step1">
+            <p class="addplans__step1-header">Шаг 1. Даты пребывания</p>
+            <p class="addplans__step1-text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <p class="addplans__step1-form-header">Ищу попутчиков:</p>
             <p>Чел.</p>
             <input name="companion" type="number">
             <button type="button">+</button>
             <button type="button">-</button>
 
-            <p>длительность:</p>
+            <p class="addplans__step1-form-header">Длительность:</p>
             <p>Дн.</p>
             <input name="days" type="number">
             <button type="button">+</button>
@@ -89,9 +89,9 @@
             <a href="#step2">Следующий шаг</a>
         </div>
 
-        <div id="step2">
-          <p>Шаг 2. Маршрут</p>
-          <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+        <div class="addplans__step2" id="step2">
+          <p class="addplans__step2-header">Шаг 2. Маршрут</p>
+          <p class="addplans__step2-text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
           <!-- тут должен быть элемент выбора стран -->
           <button type="button">Добавить страну</button>
 
@@ -99,19 +99,19 @@
           <a href="#step1">На шаг назад</a>
         </div>
 
-        <div id="step3">
-          <p>Шаг 3. Развлечения</p>
-          <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-          <p>Босния и Герцеговина</p>
+        <div class="addplans__step3" id="step3">
+          <p class="addplans__step3-header">Шаг 3. Развлечения</p>
+          <p class="addplans__step3-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+          <p class="addplans__step3-form-header">Босния и Герцеговина</p>
           <textarea name="Bosnia" placeholder="План действий"></textarea>
 
-          <p>Чехия</p>
+          <p class="addplans__step3-form-header">Чехия</p>
           <textarea name="Czech" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
           <input type="submit" value="Отправить">
           <a href="#step2" >На шаг назад</a>
         </div>
       </form>
-
+    </section>
 
       <footer>
         <h2 class="visually-hidden">Погнали?</h2>

@@ -5,7 +5,7 @@
     <title>Погнали</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
+  <body class="container">
     <header class="header">
       <img src="img/logo-mobile-blue@1x.png" alt="Погнали?">
       <button type="button">Меню</button>
@@ -30,102 +30,134 @@
       </div>
     </header>
 
-        <section class="main">
+        <section class="main main__bg">
           <h1 class="main__header">В путешествие с крутыми попутчиками</h1>
-          <div class="main__contacts">
+          <!-- <div class="main__contacts">
             <a href="tel:88005558628">Позвонить</a>
             <a href="mailto:mail@htmlacademy.ru">отправить email</a>
             <a href="">Авторизация</a>
+          </div> -->
+          <div class="main__bg-grid">
+            <p class="main__feedback">"Лучшее приложение, что я видел в жизни!"</p>
+            <p class="main__murat">Мурат Эльтазин главный редактор газеты "гаджетлайф"</p>
+            <img src="./img/traveller-illustration-mobile@1x.png" alt="">
           </div>
-          <p class="main__feedback">"Лучшее приложение, что я видел в жизни!"</p>
-          <p class="main__murat">Мурат Эльтазин главный редактор газеты "гаджетлайф"</p>
         </section>
 
         <nav>
           <ul class="navigation navigation__text-style">
-            <li>Выберите направление</li>
-            <li>Изучите идеи путешественников</li>
-            <li>Находите тех, кто похож на вас</li>
-            <li>Путешествуйте вместе!</li>
+            <li class="choose">Выберите направление</li>
+            <li class="learn">Изучите идеи путешественников</li>
+            <li class="find">Находите тех, кто похож на вас</li>
+            <li class="travel">Путешествуйте вместе!</li>
           </ul>
         </nav>
 
 
         <section class="about">
-          <h2 class="about__header">О сервисе</h2>
-          <p class="about__text-normal">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих</p>
-          <p class="about__text-bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          <div  class="about__img-mobile">
+            <h2 class="about__header">О сервисе</h2>
+            <p class="about__text-normal">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих</p>
+            <p class="about__text-bold">А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</p>
+          </div>
+          <div class="about__img-tablet">
+          </div>
         </section>
 
         <section class="direction">
-          <h2 class="direction__header">Направления</h2>
-          <p class="direction__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
-
-          <div class="direction__thai">
-            <img src="img/thailand-mobile@1x.jpg" alt="Thailand">
-            <h3 class="direction__country_header">Тайланд</h3>
-            <p class="direction__country_counter">18321</p>
-            <p class="direction__country_decription">Джунгли зовут!</p>
-          </div>
-
-          <div class="direction__france">
-            <img src="img/france-mobile@1x.jpg" alt="France">
-            <h3 class="direction__country_header">Франция</h3>
-            <p class="direction__country_counter">12518</p>
-            <p class="direction__country_decription">Трэ бьен, манифик!</p>
+          <div class="direction__grid">
+            <div>
+              <h2 class="direction__header">Направления</h2>
+              <p class="direction__text">Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.</p>
+            </div>
+            <div class="direction__bg"></div>
           </div>
 
           <div>
-            <img src="img/czech-mobile@1x.jpg" alt="Czech">
-            <h3 class="direction__country_header">Чехия</h3>
-            <p class="direction__country_counter">5326</p>
-            <p class="direction__country_decription">Закоулки старой Европы</p>
+            <div class="direction__thai">
+              <div>
+                <img class="direction__image" src="img/thailand-mobile@1x.jpg" alt="Thailand">
+              </div>
+              <div class="direction__description">
+                <h3 class="direction__country_header">Тайланд</h3>
+                <p class="direction__country_counter">18321</p>
+                <p class="direction__country_decription">Джунгли зовут!</p>
+              </div>
+            </div>
+
+            <div class="direction__france">
+              <div>
+                <img class="direction__image" src="img/france-mobile@1x.jpg" alt="France">
+              </div>
+              <div class="direction__description">
+                <h3 class="direction__country_header">Франция</h3>
+                <p class="direction__country_counter">12518</p>
+                <p class="direction__country_decription">Трэ бьен, манифик!</p>
+              </div>
+            </div>
+
+            <div class="direction__czech">
+              <div>
+                <img class="direction__image" src="img/czech-mobile@1x.jpg" alt="Czech">
+              </div>
+              <div class="direction__description">
+                <h3 class="direction__country_header">Чехия</h3>
+                <p class="direction__country_counter">5326</p>
+                <p class="direction__country_decription">Закоулки старой Европы</p>
+              </div>
+            </div>
           </div>
 
           <a class="direction__button" href="form.html">Показать все</a>
         </section>
 
         <section class="companions">
-          <h3 class="companions__header">Попутчики</h3>
-          <p class="companions__description_normal">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
-          <p class="companions__description_bold">Теперь можно легко найти единомышленников!</p>
-
-          <div class="companions__tanya">
-            <img src="img/firsova-desktop@1x.jpg" alt="Таня Фирсова">
-            <p class="companions__tanya_lvl">Level: 99</p>
-            <ul class="companions__tanya_directions">
-              <li><a href=""> Шри-Ланка</a></li>
-              <li><a href=""> Тайланд</a></li>
-              <li><a href=""> Сейшелы</a></li>
-            </ul>
-            <a class="companions__tanya_name">Таня Фирсова</a>
-            <p class="companions__tanya_tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-            <ul class="companions__tanya_transport">
-              <li><a href="">самолет</a></li>
-              <li><a href="">Автобус</a></li>
-              <li><a href="">Велосипед</a></li>
-              <li><a href="">Пешком</a></li>
-            </ul>
+          <div>
+            <h3 class="companions__header">Попутчики</h3>
+            <p class="companions__description_normal">Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.</p>
+            <p class="companions__description_bold">Теперь можно легко найти единомышленников!</p>
           </div>
 
-          <div class="companions__petya">
-            <img src="img/demin-desktop@1x.jpg" alt="Петя Демин">
-            <p class="companions__petya_lvl">Level: 80</p>
-            <ul class="companions__petya_directions">
-              <li><a href="">Бельгия</a></li>
-              <li><a href="">Чехия</a></li>
-            </ul>
-            <a class="companions__petya_name">Петя Демин</a>
-            <p class="companions__petya_tags">#Бургер #Бар #Футбол #Концерт #Крафт</p>
-            <ul class="companions__petya_transport">
-              <li><a href="">самолет</a></li>
-              <li><a href="">Автобус</a></li>
-              <li><a href="">Велосипед</a></li>
-              <li><a href="">Пешком</a></li>
-            </ul>
+          <div class="companions__grid">
+            <div class="companions__tanya">
+              <img class="companions__image" src="img/firsova-desktop@1x.jpg" alt="Таня Фирсова">
+              <p class="companions__tanya_lvl">Level: 99</p>
+              <ul class="companions__tanya_directions">
+                <li><a href=""> Шри-Ланка</a></li>
+                <li><a href=""> Тайланд</a></li>
+                <li><a href=""> Сейшелы</a></li>
+              </ul>
+              <a class="companions__tanya_name">Таня Фирсова</a>
+              <p class="companions__tanya_tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+              <ul class="companions__tanya_transport">
+                <li><a href="">самолет</a></li>
+                <li><a href="">Автобус</a></li>
+                <li><a href="">Велосипед</a></li>
+                <li><a href="">Пешком</a></li>
+              </ul>
+            </div>
+
+            <div class="companions__petya">
+              <img class="companions__image" src="img/demin-desktop@1x.jpg" alt="Петя Демин">
+              <p class="companions__petya_lvl">Level: 80</p>
+              <ul class="companions__petya_directions">
+                <li><a href="">Бельгия</a></li>
+                <li><a href="">Чехия</a></li>
+              </ul>
+              <a class="companions__petya_name">Петя Демин</a>
+              <p class="companions__petya_tags">#Бургер #Бар #Футбол #Концерт #Крафт</p>
+              <ul class="companions__petya_transport">
+                <li><a href="">самолет</a></li>
+                <li><a href="">Автобус</a></li>
+                <li><a href="">Велосипед</a></li>
+                <li><a href="">Пешком</a></li>
+              </ul>
+            </div>
           </div>
 
-          <a class="companions__button" href="photo.html">Показать всех</a>
+          <div>
+            <a class="companions__button" href="photo.html">Показать всех</a>
+          </div>
         </section>
 
         <section class="buisness">

@@ -31,32 +31,44 @@
     </header>
 
     <section class="cards">
-      <h1 class="cards__header">Попутчики</h1>
+      <div class="cards__grid">
+        <h1 class="cards__header">Попутчики</h1>
+        <a class="cards__button-main" href="index.html">На главную</a>
+      </div>
       <!-- Здесь должен быть фильтр -->
     </section>
 
-    <section>
+    <section class="cards__filter">
       <h3 class="visually-hidden">Выбор попутчика</h3>
-      <p>Подберите идеального попутчика</p>
+      <p class="cards__filter-header">Подберите идеального попутчика</p>
       <form action="https://echo.htmlacademy.ru/" method="GET">
 
-        <p>Хобби</p>
-
-        <p>Музыка</p>
-          <input name="HardRock" type="checkbox">Тяжелый рок
-          <input name="RussianRap" type="checkbox">Русский рэп
-          <input name="Evrodance" type="checkbox">Евродэнс
-
-        <p>Еда</p>
-
-        <p>Транспорт</p>
+        <p class="cards__filter-section">Хобби</p>
+        <div class="cards__filter-items-hobbie">
+          <input class="cards__filter-items" name="HardRock" type="checkbox">Тяжелый рок
+          <input class="cards__filter-items" name="RussianRap" type="checkbox">Русский рэп
+          <input class="cards__filter-items" name="Evrodance" type="checkbox">Евродэнс
+        </div>
+        <div class="cards__filter-items-music">
+        <p class="cards__filter-section">Музыка</p>
+          <input class="cards__filter-items" name="HardRock" type="checkbox">Тяжелый рок
+          <input class="cards__filter-items" name="RussianRap" type="checkbox">Русский рэп
+          <input class="cards__filter-items" name="Evrodance" type="checkbox">Евродэнс
+        </div>
+        <p class="cards__filter-section">Еда</p>
+        <div class="cards__filter-items-food">
+          <input class="cards__filter-items" name="HardRock" type="checkbox">Тяжелый рок
+          <input class="cards__filter-items" name="RussianRap" type="checkbox">Русский рэп
+          <input class="cards__filter-items" name="Evrodance" type="checkbox">Евродэнс
+        </div>
+        <p class="cards__filter-section">Транспорт</p>
           <input name="Plane" type="checkbox">Самолет
           <input name="Bus" type="checkbox">Автобус
           <input name="Bike" type="checkbox">Велосипед
           <input name="Walk" type="checkbox">Пешком
 
 
-        <p>Левел
+        <p class="cards__filter-section">Левел
           <!-- Тут должен быть кастомный мультиселект -->
         </p>
 
@@ -67,7 +79,7 @@
     <section class="cards_bg">
       <h3 class="visually-hidden">Cards</h3>
       <div class="user-card">
-        <a href="#"><img src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова"></a>
+        <a href="#"><img class="user-card__photo-mobile" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова"></a>
         <a class="user-card__header" href="#">Таня Фирсова</a>
         <p class="user-card__counter">1.5м</p>
         <p class="user-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>

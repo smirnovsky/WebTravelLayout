@@ -1,7 +1,34 @@
 
 .main {
-  background-color: var(--basic-blue);
+  background-image: url(../img/globe-back-mobile@1x.jpg);
+  width: 320px;
+  height: 569px;
+  border-radius: 20px;
 }
+
+@media (min-width: @tablet_width) {
+  .main {
+    background-image: url(../img/globe-back-tablet@1x.jpg);
+    width: 768px;
+    height: 612px;
+  }
+
+  .main__bg-grid {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .main {
+    background-image: url(../img/globe-back-desktop@1x.jpg);
+    width: 100%;
+    height: 750px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 
 .main__header {
   font-family: Blogger Sans;
@@ -34,3 +61,7 @@
   line-height: 22px;
   color: #FFFFFF;
 }
+
+// .main__bg {
+//   background-image: url(../img/globe-back-mobile@1x.jpg);
+// }

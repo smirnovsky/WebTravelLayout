@@ -1,37 +1,110 @@
+@media (min-width: @mobile_width) {
+  .companions__header {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: @special-orange;
+  }
 
+  .companions__description_normal {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+  }
+
+  .companions__description_bold {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: white;
+  }
+
+  .companions__image {
+    width: 320px;
+    border-radius: 20px 20px 0px 0px;
+  }
+}
+@media (min-width: @tablet_width) {
+  .companions__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .companions__header {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    color: @special-orange;
+  }
+
+  .companions__description_normal {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    color: white;
+  }
+
+  .companions__description_bold {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: white;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .companions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .companions__header {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    color: @special-orange;
+  }
+
+  .companions__description_normal {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    color: white;
+  }
+
+  .companions__description_bold {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: white;
+  }
+}
 .companions {
-  background-color: var(--basic-blue);
-}
-
-.companions__header {
-  font-family: Blogger Sans;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 24px;
-  color: var(--special-orange);
-}
-
-.companions__description_normal {
-  font-family: Blogger Sans;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  color: white;
-}
-
-.companions__description_bold {
-  font-family: Blogger Sans;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  color: white;
+  background-color: @basic-blue;
 }
 
 .companions__tanya {
   background-color: white;
+  border-radius: 20px;
 }
 
 .companions__tanya_lvl {
@@ -51,7 +124,7 @@ font-weight: 700;
 font-size: 21px;
 line-height: 21px;
 text-align: center;
-color: var(--basic-blue);
+color: @basic-blue;
 }
 
 .companions__tanya_tags {
@@ -61,7 +134,7 @@ color: var(--basic-blue);
   font-size: 16px;
   line-height: 18px;
   text-align: center;
-  color: var(--special_grey);
+  color: @special_grey;
 }
 
 .companions__tanya_directions {
@@ -74,6 +147,7 @@ color: var(--basic-blue);
 
 .companions__petya {
   background-color: white;
+  border-radius: 20px;
 }
 
 .companions__petya_lvl {
@@ -92,7 +166,7 @@ font-weight: 700;
 font-size: 21px;
 line-height: 21px;
 text-align: center;
-color: var(--basic-blue);
+color: @basic-blue;
 }
 
 .companions__petya_tags {
@@ -102,7 +176,7 @@ color: var(--basic-blue);
   font-size: 16px;
   line-height: 18px;
   text-align: center;
-  color: var(--special_grey);
+  color: @special_grey;
 }
 
 .companions__petya_directions {
@@ -120,5 +194,5 @@ color: var(--basic-blue);
   font-size: 18px;
   line-height: 18px;
   color: var(--basic-blue);
-  background-color: var(--basic_yellow);
+  background-color: @basic_yellow;
 }
