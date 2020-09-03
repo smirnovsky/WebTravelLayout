@@ -1,37 +1,12 @@
 a {
   text-decoration: none;
-  color: var(--basic-blue);
+  color: @basic_blue;
 }
 
 body {
   font-family: "Blogger Sans", "Arial", sans-serif;
   min-width: 320px;
-  background-color: @basic-blue;
-}
-
-
-@media (min-width: @mobile_width) {
-  .container {
-    width: 270px;
-    padding: 0 0px;
-    margin: auto;
-  }
-}
-
-@media (min-width: @tablet_width) {
-  .container {
-    width: 640px;
-    padding: 0 0px;
-    margin: auto;
-  }
-}
-
-@media (min-width: @desktop_width) {
-  .container {
-    width: 960px;
-    padding: 0 0px;
-    margin: auto;
-  }
+  background-color: @basic_blue;
 }
 
 .visually-hidden {

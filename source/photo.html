@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Погнали</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -78,27 +78,37 @@
 
     <section class="cards_bg">
       <h3 class="visually-hidden">Cards</h3>
-      <div class="user-card">
-        <a href="#"><img class="user-card__photo-mobile" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова"></a>
-        <a class="user-card__header" href="#">Таня Фирсова</a>
-        <p class="user-card__counter">1.5м</p>
+      <div class="user-card user-card__grid">
+        <div class="user-card__photo-mobile-grid">
+          <a href="#"><div class="user-card__photo-mobile"></div></a>
+          <a class="user-card__header" href="#">Таня Фирсова</a>
+          <p class="user-card__counter">1.5м</p>
+        </div>
         <p class="user-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-        <p class="user-card__text">Хочет посетить:</p>
-          <ul class="user-card__countries">
-            <li>Шри-Ланка</li>
-            <li>Тайланд</li>
-            <li>Сейшелы</li>
-          </ul>
-        <p class="user-card__text">Транспорт</p>
-          <ul class="user-card__transport">
-            <li>самолет</li>
-            <li>Автобус</li>
-            <li>Велосипед</li>
-            <li>Пешком</li>
-          </ul>
-        <p class="user-card__text">Левел:</p>
-        <p class="user-card__lvl">99</p>
         <a class="user-card__button" href="#">Позвать</a>
+        <div class="">
+          <p class="user-card__text">Хочет посетить:</p>
+            <div class="user-card__countries user-card__countries-grid">
+              <div class="user-card__countries-srilanka">Шри-Ланка</div>
+              <div class="user-card__countries-thai">Тайланд</div>
+              <div class="user-card__countries-seychells">Сейшелы</div>
+            </div>
+        </div>
+        <div class="user-card__transport-lvl-grid">
+          <div class="user-card__transport-grid-min">
+            <p class="user-card__text-hide">Транспорт</p>
+            <div class="user-card__transport user-card__transport-grid">
+              <div class="user-card__transport-plane"></div>
+              <div class="user-card__transport-bus"></div>
+              <div class="user-card__transport-bike"></div>
+              <div class="user-card__transport-onfoot"></div>
+            </div>
+          </div>
+          <div class="user-card__lvl-grid">
+            <p class="user-card__text-hide">Левел:</p>
+            <p class="user-card__lvl">99</p>
+          </div>
+        </div>
       </div>
 
       <div class="user-card">
