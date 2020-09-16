@@ -1,25 +1,522 @@
-.form-profile__header {
+.form-profile {
   background-color: @basic_blue;
+  border-radius: 0px 0px 20px 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.form-profile__logo-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-profile__logo {
+  background-image: url(../img/logo-mobile-white@1x.png);
+  width: 96px;
+  height: 15px;
+  margin-left: 25px;
+  margin-top: 28px;
+}
+
+.form-profile__menu-button {
+  margin-top: 32px;
+  margin-right: 25px;
+}
+
+.form-profile__header {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   color: @white;
+  margin-left: 25px;
+  padding-bottom: 10px;
+}
+
+.form-profile__underline {
+  width: 205px;
+  height: 5px;
+  background-color: @special_orange;
+  margin-left: 25px;
+  border-radius: 2px;
+  margin-top: -27px;
+  position: relative;
+  z-index: 4;
 }
 
 .form-profile__bg {
   background-color: @basic_blue_light;
+  padding-top: 40px;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+  padding-bottom: 40px;
 }
 
-.form-profile__lvl-number {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 38px;
-  text-align: center;
-  color: #161C35;
+.form-profile__lvl-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.form-profile__lvl-ring {
+  background-image: url(../img/petya_level.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
 }
 
 .form-profile__photo {
+  background-image: url(../img/demin-tablet@1x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   border-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.form-profile__button {
+  background-color: @special_blue_light;
+  border: 0;
+  font-style: normal;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special_dark_blue;
+  padding-left: 68px;
+  padding-right: 67px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 20px;
+  margin-left: 25px;
+  margin-top: 30px;
+}
+
+.form-profile__textarea-grid {
+  margin-top: 25px;
+}
+
+.form-profile__textarea-header {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @special_blue;
+  margin-bottom: -11px;
+  background-color: @basic_blue_light;
+  position: relative;
+  z-index: 2;
+  margin-left: 130px;
+  margin-right: 130px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form-profile__textarea {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: @basic_blue_light;
+  color: @special_grey;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  border: 2px solid #CBCED9;
+  border-radius: 10px;
+  width: 210px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 25px;
+  padding-right: 28px;
+  margin-left: 25px;
+}
+
+.form-profile__filter-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-profile__lvl-tablet-grid {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-profile__filter-section {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @basic_blue;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -10px;
+  background-color: @basic_blue_light;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.form-profile__filter_transport {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #CBCED9;
+  border-radius: 10px;
+  padding-left: 65px;
+  padding-right: 65px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.form-profile__filter-plane {
+  background-image: url(../img/icon_plane.png);
+  background-repeat: no-repeat;
+  background-color: @white;
+  width: 32px;
+  height: 32px;
+  background-position-y: 4px;
+  background-position-x: 4px;
+  border-radius: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.form-profile__filter-bus {
+  background-image: url(../img/icon_bus_blue.png);
+  background-repeat: no-repeat;
+  background-color: @white;
+  width: 32px;
+  height: 32px;
+  background-position-y: 4px;
+  background-position-x: 7px;
+  border-radius: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.form-profile__filter-bike {
+  background-image: url(../img/icon_bicycle.png);
+  background-repeat: no-repeat;
+  background-color: @white;
+  width: 32px;
+  height: 32px;
+  background-position-y: 4px;
+  background-position-x: 4px;
+  border-radius: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.form-profile__filter-legs {
+  background-image: url(../img/icon_run_blue.png);
+  background-repeat: no-repeat;
+  background-color: @white;
+  width: 32px;
+  height: 32px;
+  background-position-y: 4px;
+  background-position-x: 4px;
+  border-radius: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.form-profile__textarea-header-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet_width) {
+  .form-profile {
+    background-color: @basic_blue;
+    border-radius: 0px 0px 40px 40px;
+    position: relative;
+    z-index: 3;
+    padding-bottom: 30px;
+  }
+
+  .form-profile__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    color: @white;
+    margin-left: 76px;
+    padding-bottom: 0px;
+    margin-top: 134px;
+  }
+
+  .form-profile__underline {
+    width: 354px;
+    height: 8px;
+    background-color: @special_orange;
+    margin-left: 76px;
+    border-radius: 2px;
+    margin-top: -7px;
+    position: relative;
+    z-index: 4;
+  }
+
+  .form-profile__bg {
+    background-color: @basic_blue_light;
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
+    margin-top: -20px;
+    padding-bottom: 40px;
+  }
+
+  .form-profile__lvl-grid {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-profile__lvl-ring {
+    background-image: url(../img/petya_level.png);
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    margin-left: 75px;
+  }
+
+  .form-profile__photo {
+    background-image: url(../img/demin-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin-right: 75px;
+  }
+
+  .form-profile__lvl-tablet-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 65px;
+  }
+
+  .form-profile__lvl-tablet-ring {
+    background-image: url(../img/petya_level.png);
+    background-repeat: no-repeat;
+    background-size: 94px 94px;
+    background-position-x: -1px;
+    width: 110px;
+    height: 100px;
+    margin-left: 75px;
+  }
+
+  .form-profile__tablet-photo {
+    background-image: url(../img/demin-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 94px 94px;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin-right: 75px;
+  }
+
+  .form-profile__filter-grid {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form-profile__filter-tablet-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 59px;
+    margin-right: 63px;
+  }
+
+  .form-profile__filter-section {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @basic_blue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    background-color: @basic_blue_light;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+  }
+
+  .form-profile__filter_transport {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    margin-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #CBCED9;
+    border-radius: 10px;
+    padding-left: 68px;
+    padding-right: 67px;
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+
+  .form-profile__filter-plane {
+    background-image: url(../img/icon_plane.png);
+    background-repeat: no-repeat;
+    background-color: @white;
+    width: 44px;
+    height: 44px;
+    background-position-y: 10px;
+    background-position-x: 11px;
+    border-radius: 21px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+  }
+
+  .form-profile__filter-bus {
+    background-image: url(../img/icon_bus_blue.png);
+    background-repeat: no-repeat;
+    background-color: @white;
+    width: 44px;
+    height: 44px;
+    background-position-y: 10px;
+    background-position-x: 14px;
+    border-radius: 21px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+  }
+
+  .form-profile__filter-bike {
+    background-image: url(../img/icon_bicycle.png);
+    background-repeat: no-repeat;
+    background-color: @white;
+    width: 44px;
+    height: 44px;
+    background-position-y: 10px;
+    background-position-x: 11px;
+    border-radius: 21px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+  }
+
+  .form-profile__filter-legs {
+    background-image: url(../img/icon_run_blue.png);
+    background-repeat: no-repeat;
+    background-color: @white;
+    width: 44px;
+    height: 44px;
+    background-position-y: 10px;
+    background-position-x: 11px;
+    border-radius: 21px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+  }
+
+  .form-profile__button {
+    background-color: @special_blue_light;
+    border: 0;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @special_dark_blue;
+    padding-left: 230px;
+    padding-right: 230px;
+    padding-top: 22px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-left: 75px;
+    margin-top: 41px;
+  }
+
+  .form-profile__textarea-header {
+    display: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @special_blue;
+    margin-bottom: -11px;
+    background-color: @basic_blue_light;
+    position: relative;
+    z-index: 2;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form-profile__textarea-header-tablet {
+    display: block;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @special_blue;
+    margin-top: -15px;
+    background-color: @basic_blue_light;
+    position: relative;
+    z-index: 2;
+    margin-left: 340px;
+    margin-right: 340px;
+    margin-bottom: 52px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form-profile__textarea {
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    background-color: @basic_blue_light;
+    color: @special_grey;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+    border: 2px solid #CBCED9;
+    border-radius: 10px;
+    width: 550px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 25px;
+    padding-right: 28px;
+    margin-left: 75px;
+  }
 }

@@ -1,22 +1,97 @@
 
 .profile {
   background-color: #E6E8F1;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: -20px;
+  border-radius: 0px 0px 20px 20px;
 }
 
 .profile__header {
+  display: flex;
+  flex-direction: row;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   color: @special_orange;
+  margin-left: 49px;
+
+}
+
+.profile__header-bg-img {
+  background-image: url(../img/rates.png);
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  width: 100px;
+  height: 100px;
+  margin-right: 25px;
+  padding-bottom: 3px;
+  flex: 80%;
+}
+
+.profile__rate-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profile__rate {
+  display: flex;
+  flex-direction: column;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 16px;
   color: @special_grey;
+  margin-left: 49px;
+}
+
+.profile__rate-price {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
+  color: @special_grey;
+  margin-left: 49px;
+  margin-top: -15px;
+}
+
+.profile__rate1 {
+  color: @white;
+  background-color: @special_orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin-right: 25px;
+  border-radius: 20px;
+}
+
+.profile__rate2 {
+  color: @white;
+  background-color: @special_yellow_dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin-right: 25px;
+  border-radius: 20px;
+}
+
+.profile__rate3 {
+  color: @white;
+  background-color: @basic_yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin-right: 25px;
+  border-radius: 20px;
 }
 
 .profile__buisness_button {
@@ -25,6 +100,8 @@
   font-size: 16px;
   line-height: 16px;
   color: @basic_blue;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 @media (min-width: @tablet_width){
@@ -36,12 +113,89 @@
     color: @special_orange;
   }
 
+  .profile__header-bg-img {
+    display: none;
+    background-image: url(../img/rates.png);
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    width: 100px;
+    height: 100px;
+    margin-right: 25px;
+    padding-bottom: 3px;
+    flex: 80%;
+  }
+
+  .profile__rate-grid {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
   .profile__rate {
     font-style: normal;
     font-weight: 300;
     font-size: 28px;
     line-height: 28px;
     color: @special_grey;
+    margin-left: 0px;
+  }
+
+  .profile__rate-subgrid {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+
+  .profile__rate-price {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 28px;
+    color: @special_grey;
+    margin-right: 74px;
+  }
+
+  .profile__rate1 {
+    color: @white;
+    background-color: @special_orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    margin-left: 40px;
+    border-radius: 35px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .profile__rate2 {
+    color: @white;
+    background-color: @special_yellow_dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    margin-left: 40px;
+    border-radius: 35px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .profile__rate3 {
+    color: @white;
+    background-color: @basic_yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 68px;
+    height: 68px;
+    margin-left: 40px;
+    border-radius: 35px;
+    font-size: 28px;
+    line-height: 28px;
   }
 
   .profile__buisness_button {
@@ -54,7 +208,16 @@
 }
 
 @media (min-width: @desktop_width) {
+  .profile {
+    background-color: #E6E8F1;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-top: -20px;
+    border-radius: 0px 0px 40px 40px;
+  }
+
   .profile__header {
+    margin-left: 480px;
     font-style: normal;
     font-weight: 700;
     font-size: 45px;

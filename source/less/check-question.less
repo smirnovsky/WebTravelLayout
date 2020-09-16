@@ -1,6 +1,10 @@
 
 .check {
-  background-color: var(--basic-blue);
+  background-color: @basic_blue;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+  padding-bottom: 40px;
 }
 
 .check__form {
@@ -9,6 +13,8 @@
   font-size: 24px;
   line-height: 24px;
   color: @special_orange;
+  text-align: center;
+  margin-top: 70px;
 }
 
 .check__form_description {
@@ -18,10 +24,108 @@
   line-height: 22px;
   text-align: center;
   color: @white;
+  width: 211px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.check__form_sign {
+  display: flex;
+  flex-direction: row;
+}
+
+.check__form-input {
+  padding-top: 22px;
+  padding-left: 25px;
+  padding-bottom: 22px;
+  width: 220px;
+  border-radius: 10px 0px 0px 10px;
+  outline: none;
+  border: none;
+  margin-left: 25px;
+  margin-right: -10px;
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.check__form-input-button {
+  background-color: @basic_yellow;
+  background-image: url(../img/Polygon\ 11.png);
+  background-repeat: no-repeat;
+  background-position-y: 22px;
+  background-position-x: 22px;
+  border-radius: 10px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-right: 30px;
+  padding-left: 30px;
+  outline: none;
+  border: none;
+  margin-right: 22px;
+}
+
+.check__question__phone-grid {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  margin-top: 51px;
+}
+
+.check__question__phone {
+  background-image: url(../img/icon_telephone.png);
+  margin-left: 25px;
+  margin-top: -14px;
+  background-repeat: no-repeat;
+  background-color: @special_dark_blue;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  background-position-y: 13px;
+  background-position-x: 13px;
+}
+
+.check__question__phone-number {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: @basic_yellow;
+}
+
+.check__question__mail-grid {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  margin-top: 15px;
+}
+
+.check__question__mail {
+  background-image: url(../img/icon_mail.png);
+  margin-left: 25px;
+  margin-top: -14px;
+  background-repeat: no-repeat;
+  background-color: @special_dark_blue;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  background-position-y: 10px;
+  background-position-x: 10px;
+}
+
+.check__question__mail-adress {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @basic_yellow;
 }
 
 .check__link {
-  color: #FFD74B;
+  color: @basic_yellow;
   text-decoration: underline;
 }
 
@@ -33,6 +137,10 @@
   text-align: center;
   letter-spacing: 0.01em;
   color: @white;
+  width: 216px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 29px;
 }
 
 .check__question_contacts {
@@ -41,4 +149,317 @@
   font-size: 16px;
   line-height: 22px;
   color: @special_orange;
+}
+
+.check__form-input-button-desktop {
+  display: none;
+}
+
+@media (min-width: @tablet_width) {
+  .check {
+    background-color: @basic_blue;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 40px 40px;
+    position: relative;
+    padding-bottom: 45px;
+    z-index: 3;
+  }
+
+  .check__form {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    color: @special_orange;
+    text-align: center;
+    margin-top: 70px;
+  }
+
+  .check__form_description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: @white;
+    width: 638px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .check__form_sign {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .check__form-input {
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-bottom: 22px;
+    width: 536px;
+    border-radius: 20px 0px 0px 20px;
+    outline: none;
+    border: none;
+    margin-left: auto;
+    margin-right: 0px;
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .check__form-input-button {
+    background-color: @basic_yellow;
+    background-image: url(../img/Polygon\ 11.png);
+    background-repeat: no-repeat;
+    background-position-y: 22px;
+    background-position-x: 22px;
+    border-radius: 0px 20px 20px 0px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 30px;
+    padding-left: 30px;
+    outline: none;
+    border: none;
+    margin-right: auto;
+  }
+
+  .check__question_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: @white;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 29px;
+  }
+
+  .check__question__phone-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    margin-top: 51px;
+  }
+
+  .check__question__phone {
+    background-image: url(../img/icon_telephone_big.svg);
+    margin-left: 75px;
+    margin-top: -14px;
+    background-repeat: no-repeat;
+    background-color: @special_dark_blue;
+    width: 68px;
+    height: 68px;
+    border-radius: 35px;
+    background-position-y: 20px;
+    background-position-x: 20px;
+  }
+
+  .check__question__phone-number {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 8px;
+    color: @basic_yellow;
+  }
+
+  .check__question__mail-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    margin-top: 15px;
+  }
+
+  .check__question__mail {
+    background-image: url(../img/icon_mail_big.svg);
+    margin-left: 75px;
+    margin-top: -14px;
+    background-repeat: no-repeat;
+    background-color: @special_dark_blue;
+    width: 68px;
+    height: 68px;
+    border-radius: 35px;
+    background-position-y: 15px;
+    background-position-x: 15px;
+  }
+
+  .check__question__mail-adress {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 8px;
+    text-transform: uppercase;
+    color: @basic_yellow;
+  }
+
+  .check__form-input-button-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop_width) {
+
+  .check {
+    background-color: @basic_blue;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 40px 40px;
+    position: relative;
+    padding-bottom: 45px;
+    z-index: 3;
+  }
+
+  .check__form {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    color: @special_orange;
+    text-align: center;
+    margin-top: 110px;
+  }
+
+  .check__form_description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 31px;
+    text-align: center;
+    color: @white;
+    width: 638px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 57px;
+  }
+
+  .check__form_sign {
+    display: flex;
+    flex-direction: row;
+    margin-top: 57px;
+  }
+
+  .check__form-input {
+    padding-top: 22px;
+    padding-left: 25px;
+    padding-bottom: 22px;
+    width: 800px;
+    border-radius: 20px 0px 0px 20px;
+    outline: none;
+    border: none;
+    margin-left: auto;
+    margin-right: 0px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;;
+  }
+
+  .check__form-input-button {
+    display: none;
+  }
+
+  .check__form-input-button-desktop {
+    display: block;
+    background-color: @basic_yellow;
+    background-image: url(../img/Polygon\ 11.png);
+    background-repeat: no-repeat;
+    background-position-y: 34px;
+    background-position-x: 250px;
+    border-radius: 0px 20px 20px 0px;
+    padding-top: 30px;
+    padding-bottom: 27px;
+    padding-right: 140px;
+    padding-left: 36px;
+    outline: none;
+    border: none;
+    margin-right: auto;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .check__question_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: @white;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+  }
+
+  .check__question__desktop-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 77px;
+  }
+
+  .check__question__phone-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 31px;
+    margin-left: 224px;
+  }
+
+  .check__question__phone {
+    background-image: url(../img/icon_telephone_big.svg);
+    background-repeat: no-repeat;
+    background-color: @special_dark_blue;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background-position-y: 30px;
+    background-position-x: 30px;
+    margin-top: -40px;
+  }
+
+  .check__question__phone-number {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: -8px;
+    color: @basic_yellow;
+  }
+
+  .check__question__mail-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 31px;
+    margin-right: 288px;
+  }
+
+  .check__question__mail {
+    background-image: url(../img/icon_mail_big.svg);
+    margin-left: 75px;
+    background-repeat: no-repeat;
+    background-color: @special_dark_blue;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background-position-y: 25px;
+    background-position-x: 25px;
+  }
+
+  .check__question__mail-adress {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 18px;
+    text-transform: uppercase;
+    color: @basic_yellow;
+  }
 }

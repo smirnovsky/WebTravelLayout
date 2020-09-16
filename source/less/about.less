@@ -1,15 +1,28 @@
 .about__img-mobile {
   background: url(../img/about-mobile@1x.png);
+  background-repeat: no-repeat;
+  width: 292px;
+  height: 353px;
+  border-radius: 0px 0px 25px 25px;
 }
 .about {
   display: grid;
 }
+
+.about__bg {
+  background-color: @basic_blue;
+  border-radius: 0px 0px 25px 25px;
+  position: relative;
+  z-index: 2;
+}
+
 .about__header {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   color: @special_orange;
+  margin-left: 49px;
 }
 .about__text-normal {
   font-style: normal;
@@ -17,6 +30,8 @@
   font-size: 16px;
   line-height: 22px;
   color: @white;
+  margin-left: 49px;
+  margin-right: 40px;
 }
 .about__text-bold {
   font-style: normal;
@@ -24,6 +39,27 @@
   font-size: 16px;
   line-height: 22px;
   color: @white;
+  margin-left: 49px;
+  margin-right: 40px;
+}
+
+.about__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic_blue;
+  background-color: @basic_yellow;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  padding-left: 23px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  border-radius: 10px;
 }
 
 @media (min-width: @tablet_width) {
@@ -31,6 +67,7 @@
     background-image: url(../img/about-tablet@1x.png);
     width: 376px;
     height: 548px;
+    margin-top: 40px;
   }
   .about__img-mobile {
     background: none;
@@ -38,6 +75,7 @@
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 144px;
   }
   .about__header {
     font-style: normal;
@@ -45,6 +83,7 @@
     font-size: 45px;
     line-height: 45px;
     color: @special_orange;
+    margin-left: 74px;
   }
   .about__text-normal {
     font-style: normal;
@@ -52,6 +91,8 @@
     font-size: 28px;
     line-height: 33px;
     color: @white;
+    margin-left: 74px;
+    width: 308px;
   }
   .about__text-bold {
     font-style: normal;
@@ -59,25 +100,56 @@
     font-size: 21px;
     line-height: 25px;
     color: @white;
+    margin-left: 74px;
+    width: 265px;
   }
+
+  .about__button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 74px;
+    margin-right: 0px;
+    margin-top: 25px;
+    padding-left: 23px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    border-radius: 10px;
+  }
+
 }
 
 @media (min-width: @desktop_width) {
   .about__img-tablet {
-    background-image: url(../img/about-desktop@1x.png);
+    background-image: url(../img/img_back.png);
+    background-repeat: no-repeat;
     width: 630px;
-    height: 665px;
+    height: 670px;
+    margin-top: -10px;
+    margin-bottom: 14px;
   }
   .about {
+    background-color: @basic_blue;
+    border-radius: 0px 0px 40px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
   }
   .about__header {
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 45px;
     line-height: 45px;
     color: @special_orange;
+    margin-top: 60px;
   }
   .about__text-normal {
     font-style: normal;
@@ -85,12 +157,34 @@
     font-size: 28px;
     line-height: 34px;
     color: @white;
+    width: 619px;
+    margin-top: 57px;
   }
   .about__text-bold {
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 21px;
     line-height: 24px;
     color: @white;
+    width: 425px;
+    margin-top: 38px;
+  }
+
+  .about__button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 74px;
+    margin-right: 0px;
+    margin-top: 85px;
+    padding-left: 23px;
+    padding-top: 22px;
+    border-radius: 20px;
   }
 }

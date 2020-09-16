@@ -1,0 +1,230 @@
+.desktop__header {
+  display: none;
+}
+
+.deskop__header-grid {
+  display: none;
+}
+
+.desktop__header-blue {
+  display: none;
+}
+
+.desktop__main-grid {
+  display: none;
+}
+
+@media (min-width: @tablet_width) {
+  .desktop__header {
+    display: none;
+  }
+
+  .deskop__header-grid {
+    display: none;
+  }
+
+  .desktop__header-blue {
+    display: none;
+  }
+
+  .desktop__main-grid {
+    display: none;
+  }
+
+}
+
+@media (min-width: @desktop_width) {
+  .desktop__main {
+    background-image: url(../img/globe-back-desktop@1x.jpg);
+    width: 1440px;
+    height: 750px;
+  }
+
+  .desktop__header {
+    background-color: @white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 13px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .desktop__header-logo {
+    background-image: url(../img/logo-desktop-blue@1x.png);
+    background-repeat: no-repeat;
+    width: 198px;
+    height: 60px;
+    margin-left: 60px;
+  }
+
+  .deskop__header-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -360px;
+  }
+
+  .desktop__header-line {
+    background-color: @basic_blue;
+    width: 44px;
+    height: 2px;
+  }
+
+  .desktop__header-text {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @basic_blue;
+    margin-left: 33px;
+  }
+
+  .desktop__contacts  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 60px;
+  }
+
+  .desktop__contacts-phone {
+    background-image: url(../img/icon_call.png);
+    background-repeat: no-repeat;
+    background-color: @special_orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position-y: 15px;
+    background-position-x: 15px;
+  }
+
+  .desktop__contacts-email {
+    background-image: url(../img/icon_mail2.png);
+    background-repeat: no-repeat;
+    background-color: @special_yellow_dark;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position-y: 17px;
+    background-position-x: 15px;
+  }
+
+  .desktop__contacts-authorisation {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @special_dark_blue;
+    background-color: @basic_yellow;
+    padding-left: 29px;
+    padding-right: 28px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+  }
+
+  .desktop__header-blue {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 13px;
+  }
+
+  .desktop__header-blue-logo {
+    background-image: url(../img/logo-desktop-white@1x.png);
+    background-repeat: no-repeat;
+    width: 198px;
+    height: 60px;
+    margin-left: 60px;
+  }
+
+  .deskop__header-blue-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -360px;
+  }
+
+  .desktop__header-blue-line {
+    background-color: @white;
+    width: 44px;
+    height: 2px;
+  }
+
+  .desktop__header-blue-text {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @white;
+    margin-left: 33px;
+  }
+
+  .desktop__main-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .desktop__main-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 70px;
+    color: @white;
+    width: 418px;
+    margin-top: 110px;
+    margin-left: 127px;
+  }
+
+  .desktop__main-traveller {
+    background-image: url(../img/traveller-illustration-desktop@1x.png);
+    background-repeat: no-repeat;
+    width: 431px;
+    height: 640px;
+  }
+
+  .desktop__main-feedback-grid {
+    display: flex;
+    flex-direction: column;
+    margin-top: 122px;
+    margin-right: 83px;
+  }
+
+  .desktop__main-feedback-normal {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+    color: @white;
+    width: 264px;
+  }
+
+  .desktop__main-feedback-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 24px;
+    color: @white;
+    width: 246px;
+    margin-top: 45px;
+  }
+}

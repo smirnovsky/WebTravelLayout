@@ -1,0 +1,233 @@
+.route {
+  background-color: @basic_yellow;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 30px 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.route__adress {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  width: 143px;
+}
+
+.route__marker {
+  background-image: url(../img/icon_location.png);
+  background-repeat: no-repeat;
+  background-color: @special_dark_blue;
+  background-position-y: 12px;
+  background-position-x: 12px;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  margin-left: 25px;
+
+}
+
+.route__grid {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-top: -30px;
+  padding-top: 50px;
+}
+
+.route__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic_blue;
+  background-color: @basic_yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  padding-left: 23px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  border-radius: 10px;
+  border: @special_dark_blue 3px solid;
+}
+
+.route__button-triangle {
+  background-image: url(../img/Polygon\ 1.png);
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  margin-right: 23px;
+  background-position-y: 2px;
+  padding-bottom: 3px;
+}
+
+@media (min-width: @tablet_width) {
+  .route {
+    background-color: @basic_yellow;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 30px 30px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 82px;
+  }
+
+  .route__adress {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    width: 430px;
+    margin-top: 82px;
+    color: @basic_blue;
+  }
+
+  .route__marker {
+    background-image: url(../img/icon_location_big.svg);
+    background-repeat: no-repeat;
+    background-color: @special_dark_blue;
+    background-position-y: 18px;
+    background-position-x: 18px;
+    width: 68px;
+    height: 68px;
+    border-radius: 35px;
+    margin-left: 75px;
+    margin-top: 62px;
+  }
+
+  .route__grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+    padding-top: 50px;
+  }
+
+  .route__button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 62px;
+    padding-left: 23px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    border-radius: 20px;
+    border: @special_dark_blue 3px solid;
+  }
+
+  .route__button-triangle {
+    background-image: url(../img/Polygon\ 1.png);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    margin-right: 23px;
+    background-position-y: 2px;
+    padding-bottom: 3px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+
+  .route {
+    background-color: @basic_yellow;
+    padding-bottom: 30px;
+    border-radius: 0px 0px 30px 30px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 82px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -40px;
+  }
+
+  .route__adress {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    width: 430px;
+    margin-top: 100px;
+    color: @basic_blue;
+  }
+
+  .route__marker {
+    background-image: url(../img/icon_location_big.svg);
+    background-repeat: no-repeat;
+    background-color: @special_dark_blue;
+    background-position-y: 18px;
+    background-position-x: 18px;
+    width: 68px;
+    height: 68px;
+    border-radius: 35px;
+    margin-left: 280px;
+    margin-top: 62px;
+  }
+
+  .route__grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+    padding-top: 50px;
+  }
+
+  .route__button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 147px;
+    margin-right: 75px;
+    margin-top: 100px;
+    padding-left: 23px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    padding-right: 30px;
+    border-radius: 20px;
+    border: @special_dark_blue 3px solid;
+  }
+
+  .route__button-triangle {
+    background-image: url(../img/Polygon\ 1.png);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    margin-right: 3px;
+    margin-left: 30px;
+    margin-top: 4px;
+    background-position-y: 2px;
+    padding-bottom: 3px;
+  }
+}
+

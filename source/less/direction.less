@@ -1,7 +1,140 @@
 
 .direction {
   background-color: @basic_blue_light;
+  padding-top: 40px;
+  position: relative;
+  z-index: 1;
+  margin-top: -25px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 20px 20px;
 }
+
+// thai-----------------------------------------------------------------
+
+.direction__thai {
+  display: flex;
+  flex-direction: column;
+}
+
+.direction__flag-thai {
+  background-image: url(../img/thai.png);
+  width: 35px;
+  height: 24px;
+  position: relative;
+  z-index: 2;
+  margin-left: 50px;
+  margin-top: -20px;
+}
+
+.direction__image-thai {
+  background-image: url(../img/thailand-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0px 0px;
+  margin-left: 25px;
+  margin-bottom: -10px;
+  margin-top: 20px;
+}
+
+.direction__description-thai {
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: -12px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+// france----------------------------------------------------------
+
+.direction__france {
+  display: flex;
+  flex-direction: column;
+}
+
+.direction__flag-france {
+  background-image: url(../img/France.png);
+  width: 35px;
+  height: 24px;
+  position: relative;
+  z-index: 2;
+  margin-left: 50px;
+  margin-top: -20px;
+}
+
+.direction__image-france {
+  background-image: url(../img/france-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0px 0px;
+  margin-left: 25px;
+  margin-bottom: -10px;
+  margin-top: 20px;
+}
+
+.direction__description-france {
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: -12px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+// czech-------------------------------------------------------------
+
+.direction__czech {
+  display: flex;
+  flex-direction: column;
+}
+
+.direction__flag-czech {
+  background-image: url(../img/Czech.png);
+  width: 35px;
+  height: 24px;
+  position: relative;
+  z-index: 2;
+  margin-left: 50px;
+  margin-top: -20px;
+}
+
+.direction__image-czech {
+  background-image: url(../img/czech-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  width: 270px;
+  height: 110px;
+  border-radius: 10px 10px 0px 0px;
+  margin-left: 25px;
+  margin-bottom: -10px;
+  margin-top: 20px;
+}
+
+.direction__description-czech {
+  background-color: white;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: -12px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 
 .direction__header {
   font-style: normal;
@@ -9,6 +142,8 @@
   font-size: 24px;
   line-height: 24px;
   color: @special_orange;
+  margin-top: 70px;
+  margin-left: 50px;
 }
 
 .direction__text {
@@ -17,98 +152,8 @@
   font-size: 16px;
   line-height: 22px;
   color: @special_grey;
-}
-
-.direction__description {
-  background-color: white;
-  border-radius: 20px;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
-
-.direction__image {
-  border-radius: 15px;
-  margin-left: 25px;
-  margin-bottom: -20px;
-  margin-top: 20px;
-}
-
-@media (min-width: @tablet_width){
-  .direction__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .direction__bg {
-    background-image: url(../img/flags-back@1x.png);
-    width: 288px;
-    height: 574px;
-  }
-
-  .direction__header {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 45px;
-    color: @special_orange;
-  }
-
-  .direction__text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 28px;
-    line-height: 33px;
-    color: @special_grey;
-  }
-
-  .direction__thai {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .direction__france {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .direction__czech {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
-
-  .direction__description {
-    background-color: white;
-    border-radius: 20px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-  }
-
-  .direction__image {
-    border-radius: 15px;
-    margin-left: 25px;
-    margin-bottom: -20px;
-    margin-top: 20px;
-  }
-}
-
-@media (min-width: @desktop_width){
-  .direction {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .direction__bg {
-    background-image: none;
-  }
-
+  margin-left: 50px;
+  margin-right: 55px;
 }
 
 .direction__country_header {
@@ -144,4 +189,522 @@
   line-height: 18px;
   color: @basic_blue;
   background-color: @basic_yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  padding-left: 23px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  border-radius: 10px;
+}
+
+.direction__button-triangle {
+  background-image: url(../img/Polygon\ 1.png);
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  margin-right: 23px;
+  background-position-y: 2px;
+  padding-bottom: 3px;
+}
+
+@media (min-width: @tablet_width){
+  .direction__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .direction__bg {
+    background-image: url(../img/flags-back@1x.png);
+    width: 288px;
+    height: 574px;
+    margin-top: 80px;
+    margin-left: -80px;
+  }
+
+  .direction__header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    color: @special_orange;
+    margin-left: 73px;
+    margin-top: 73px;
+  }
+
+  .direction__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    color: @special_grey;
+    width: 378px;
+    margin-left: 75px;
+  }
+
+  .direction__main-grid {
+    margin-right: 75px;
+    margin-left: 75px;
+    margin-top: -200px;
+  }
+
+  // thai----------------------------------------------
+
+  .direction__thai {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 140px;
+  }
+
+  .direction__flag-thai {
+    background-image: url(../img/Thailand-tablet.png);
+    width: 70px;
+    height: 47px;
+    position: relative;
+    z-index: 3;
+    margin-left: -135px;
+    margin-top: 20px;
+  }
+
+  .direction__image-thai {
+    background-image: url(../img/thailand-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 140px;
+    padding-right: 65px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: -55px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .direction__description-thai {
+    height: 100px;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 350px;
+    padding-left: 26px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  // france---------------------------------------------
+
+  .direction__france {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 140px;
+    margin-top: 10px;
+  }
+
+  .direction__flag-france {
+    background-image: url(../img/France-tablet.png);
+    width: 70px;
+    height: 47px;
+    position: relative;
+    z-index: 3;
+    margin-left: -135px;
+    margin-top: 20px;
+  }
+
+  .direction__image-france {
+    background-image: url(../img/france-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 140px;
+    padding-right: 65px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: -55px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .direction__description-france {
+    height: 100px;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 350px;
+    padding-left: 26px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  // czech------------------------------------------
+  .direction__czech {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 140px;
+    margin-top: 10px;
+  }
+
+  .direction__flag-czech {
+    background-image: url(../img/Czech-tablet.png);
+    width: 70px;
+    height: 47px;
+    position: relative;
+    z-index: 3;
+    margin-left: -135px;
+    margin-top: 20px;
+  }
+
+  .direction__image-czech {
+    background-image: url(../img/czech-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 140px;
+    padding-right: 65px;
+    border-radius: 0px 10px 10px 0px;
+    margin-left: -55px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .direction__description-czech {
+    height: 100px;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 350px;
+    padding-left: 26px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  .direction__country_header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: @black;
+    margin-top: -20px;
+  }
+
+  .direction__country_counter {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: @special_grey;
+    opacity: 0.3;
+    margin-top: -40px;
+  }
+
+  .direction__country_decription {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: @special_grey;
+    opacity: 0.3;
+    width: 132px;
+    margin-top: -20px;
+  }
+
+  .direction__button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 44px;
+    margin-bottom: 50px;
+    padding-left: 23px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    border-radius: 10px;
+  }
+
+  .direction__button-triangle {
+    background-image: url(../img/Polygon\ 1.png);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    margin-right: 23px;
+    background-position-y: 2px;
+    padding-bottom: 3px;
+  }
+
+}
+
+@media (min-width: @desktop_width){
+  .direction__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .direction {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: @basic_blue_light;
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
+    margin-top: -25px;
+    border-radius: 0px 0px 40px 40px;
+    padding-bottom: 0px;
+  }
+
+  .direction__bg {
+    background-image: url(../img/flags-back@1x.png);
+    width: 288px;
+    height: 574px;
+    margin-top: -230px;
+    margin-left: 370px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .direction__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    color: @special_orange;
+    margin-left: 141px;
+    margin-top: -150px;
+  }
+
+  .direction__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    color: @special_grey;
+    width: 378px;
+    margin-left: 141px;
+  }
+
+  .direction__main-grid {
+    margin-right: 25px;
+    margin-left: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  // thai----------------------------------------------
+
+  .direction__thai {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 140px;
+  }
+
+  .direction__flag-thai {
+    background-image: url(../img/Thailand-tablet.png);
+    width: 70px;
+    height: 47px;
+    position: relative;
+    z-index: 3;
+    margin-left: -135px;
+    margin-top: 20px;
+  }
+
+  .direction__image-thai {
+    background-image: url(../img/thailand-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 140px;
+    padding-right: 65px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -55px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .direction__description-thai {
+    height: 100px;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 350px;
+    padding-left: 26px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  // france---------------------------------------------
+
+  .direction__france {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 140px;
+    margin-top: 10px;
+  }
+
+  .direction__flag-france {
+    background-image: url(../img/France-tablet.png);
+    width: 70px;
+    height: 47px;
+    position: relative;
+    z-index: 3;
+    margin-left: -135px;
+    margin-top: 20px;
+  }
+
+  .direction__image-france {
+    background-image: url(../img/france-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 140px;
+    padding-right: 65px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -55px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .direction__description-france {
+    height: 100px;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 350px;
+    padding-left: 26px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  // czech------------------------------------------
+  .direction__czech {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 140px;
+    margin-top: 10px;
+  }
+
+  .direction__flag-czech {
+    background-image: url(../img/Czech-tablet.png);
+    width: 70px;
+    height: 47px;
+    position: relative;
+    z-index: 3;
+    margin-left: -135px;
+    margin-top: 20px;
+  }
+
+  .direction__image-czech {
+    background-image: url(../img/czech-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 140px;
+    padding-right: 65px;
+    border-radius: 0px 20px 20px 0px;
+    margin-left: -55px;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .direction__description-czech {
+    height: 100px;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-right: 350px;
+    padding-left: 26px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+  }
+
+  .direction__country_header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: @black;
+    margin-top: -20px;
+  }
+
+  .direction__country_counter {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: @special_grey;
+    opacity: 0.3;
+    margin-top: -40px;
+  }
+
+  .direction__country_decription {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: @special_grey;
+    opacity: 0.3;
+    width: 132px;
+    margin-top: -20px;
+  }
+
+  .direction__button {
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 370px;
+    margin-top: 444px;
+    padding-left: 23px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    padding-right: 0px;
+    border-radius: 15px;
+  }
+
+  .direction__button-triangle {
+    background-image: url(../img/Polygon\ 1.png);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    margin-left: 40px;
+    background-position-y: 2px;
+    padding-bottom: 3px;
+  }
+
 }
