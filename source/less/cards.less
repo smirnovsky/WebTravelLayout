@@ -1,0 +1,899 @@
+.cards {
+  background-color: @basic_blue;
+  border-radius: 0px 0px 20px 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.cards__header-grid {
+  display: grid;
+}
+
+.cards__header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: @white;
+  margin-left: 25px;
+  padding-bottom: 0px;
+}
+
+.cards__underline {
+  width: 173px;
+  height: 5px;
+  background-color: @special_orange;
+  margin-left: 25px;
+  border-radius: 2px;
+  margin-top: -2px;
+  position: relative;
+  z-index: 4;
+}
+
+.cards__button-main {
+  display: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @white;
+}
+
+.cards__filter-countries-grid {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #E2E5F2;
+  border-radius: 0px 0px 20px 20px;
+  padding-top: 37px;
+  padding-bottom: 17px;
+  margin-top: -22px;
+  position: relative;
+  z-index: 2;
+}
+
+.cards__filter-countries-icon {
+  background-image: url(../img/icon_filter.png);
+  background-repeat: no-repeat;
+  padding-top: 4px;
+  width: 15px;
+  height: 10px;
+
+}
+
+.cards__filter-countries-dots {
+  color: @basic_blue;
+  margin-top: -10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.cards__filter-countries {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @special_dark_blue;
+}
+
+.cards__bg {
+  background-color: @basic_blue_light;
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+  margin-top: -50px;
+  padding-bottom: 20px;
+}
+
+.cards__filter{
+  background-color: @basic_yellow;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  padding-bottom: 22px;
+}
+
+.cards__filter-header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: @basic_blue;
+  width: 145px;
+  padding-top: 25px;
+  margin-left: 25px;
+}
+
+.cards__filter-line {
+  background-color: #F3C72B;
+  width: 100% - 20px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cards__filter-section {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @basic_blue;
+  margin-left: 25px;
+}
+
+.cards__filter-section-transport {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @basic_blue;
+  margin-left: 25px;
+}
+
+.cards__filter_transport {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-left: 25px;
+}
+
+.cards__filter-plane {
+  background-image: url(../img/icon_plane.png);
+  background-repeat: no-repeat;
+  background-color: @white;
+  width: 32px;
+  height: 32px;
+  background-position-y: 4px;
+  background-position-x: 4px;
+  border-radius: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.cards__filter-bus {
+  background-image: url(../img/icon_bus_blue.png);
+  background-repeat: no-repeat;
+  background-color: @white;
+  width: 32px;
+  height: 32px;
+  background-position-y: 4px;
+  background-position-x: 7px;
+  border-radius: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.cards__filter-bike {
+  background-image: url(../img/icon_bicycle.png);
+  background-repeat: no-repeat;
+  background-color: @white;
+  width: 32px;
+  height: 32px;
+  background-position-y: 4px;
+  background-position-x: 4px;
+  border-radius: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.cards__filter-legs {
+  background-image: url(../img/icon_run_blue.png);
+  background-repeat: no-repeat;
+  background-color: @white;
+  width: 32px;
+  height: 32px;
+  background-position-y: 4px;
+  background-position-x: 4px;
+  border-radius: 16px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.cards__filter-items-music {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__filter-items-hobbie {
+  display: none;
+}
+
+.cards__filter-items-food {
+  display: none;
+}
+
+.cards__filter-items {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  color: black;
+}
+
+.cards__filter-items-mobile {
+  display: none;
+}
+
+.cards__filter-button-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cards__filter-button {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 80px;
+  padding-left: 80px;
+  border: 0;
+  border-radius: 25px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #161C35;
+}
+
+.cards__filter-tablet-grid {
+  display: none;
+  flex-direction: row;
+  column-gap: 28px;
+  list-style-type: none;
+  margin-top: 58px;
+  margin-left: -92px;
+  margin-right: 50px;
+}
+
+.cards__filter-showall {
+  display: none;
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #192144;
+  margin-top: 40px;
+}
+
+.cards__filter-tablet-dots {
+  display: none;
+  color: @basic_blue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 20px;
+  margin-top: 28px;
+}
+
+
+@media (min-width: @tablet_width) {
+  .cards {
+    background-color: @basic_blue;
+    border-radius: 0px 0px 40px 40px;
+    position: relative;
+    z-index: 3;
+  }
+
+  .cards__bg {
+    background-color: @basic_blue_light;
+    padding-top: 80px;
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+    padding-bottom: 40px;
+  }
+
+  .cards__header-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cards__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 20px;
+    color: @white;
+    margin-left: 74px;
+    margin-top: 150px;
+    margin-bottom: 85px;
+    padding-bottom: 10px;
+  }
+
+  .cards__button-main {
+    background-image: url(../img/icon_arrow_bend.svg);
+    background-repeat: no-repeat;
+    background-position-x: 140px;
+    width: 180px;
+    height: 50px;
+    margin-right: -100px;
+    margin-top: 90px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @white;
+  }
+
+  .cards__filter-countries-dots {
+    display: none;
+    color: @basic_blue;
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+
+  .cards__underline {
+    width: 288px;
+    height: 8px;
+    background-color: @special_orange;
+    margin-left: 77px;
+    border-radius: 2px;
+    margin-top: -5px;
+    position: relative;
+    z-index: 4;
+  }
+
+  .cards__filter{
+    background-color: @basic_yellow;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    border-radius: 20px;
+    padding-bottom: 22px;
+  }
+
+  .cards__filter-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: @basic_blue;
+    width: 480px;
+    padding-top: 25px;
+    margin-left: 25px;
+  }
+
+  .cards__filter-section {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @basic_blue;
+    margin-left: 25px;
+  }
+
+  .cards__filter-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+  }
+
+  .cards__filter-items-mobile {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+  }
+
+  .cards__filter-line {
+    display: none;
+    background-color: #F3C72B;
+    width: 100% - 20px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards__filter-line-header {
+    background-color: #F3C72B;
+    width: 100% - 20px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards__filter-line-button {
+    background-color: #F3C72B;
+    width: 100% - 20px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
+    margin-bottom: 55px;
+  }
+
+  .cards__filter-items-music {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .cards__filter-items-hobbie {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .cards__filter-items-food {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .cards__filter-countries-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2E5F2;
+    border-radius: 0px 0px 40px 40px;
+    padding-top: 57px;
+    padding-bottom: 56px;
+    margin-top: -37px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cards__filter-countries-icon {
+    display: none;
+    background-image: url(../img/icon_filter.png);
+    background-repeat: no-repeat;
+    padding-top: 4px;
+    width: 15px;
+    height: 10px;
+
+  }
+
+  .cards__filter-countries {
+    display: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @special_dark_blue;
+  }
+
+  .cards__filter-tablet-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 28px;
+    list-style-type: none;
+    margin-top: 58px;
+    margin-left: -92px;
+    margin-right: 50px;
+  }
+
+  .cards__filter-tablet-europe {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #192144;
+  }
+
+  .cards__filter-tablet-asia {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #192144;
+    opacity: 0.3;
+  }
+
+  .cards__filter-tablet-america {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #192144;
+    opacity: 0.3;
+  }
+
+  .cards__filter-tablet-islands {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #192144;
+    opacity: 0.3;
+  }
+
+  .cards__filter-showall {
+    display: block;
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #192144;
+    margin-top: 40px;
+  }
+
+
+  .cards__filter-tablet-dots {
+    display: block;
+    color: @basic_blue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 20px;
+    margin-top: 28px;
+  }
+
+  .cards__filter-section-transport {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cards__filter_transport {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1px;
+    justify-content: flex-start;
+    margin-bottom: 0px;
+  }
+
+  .cards__filter-button {
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-right: 246px;
+    padding-left: 246px;
+    border: 0;
+    border-radius: 25px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #161C35;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .cards__header-grid {
+    display: grid;
+  }
+
+  .cards__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: @white;
+    margin-left: 25px;
+    padding-bottom: 0px;
+  }
+
+  .cards__underline {
+    width: 173px;
+    height: 5px;
+    background-color: @special_orange;
+    margin-left: 25px;
+    border-radius: 2px;
+    margin-top: -2px;
+    position: relative;
+    z-index: 4;
+  }
+
+  .cards__button-main {
+    display: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: @white;
+  }
+
+  .cards__filter-countries-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2E5F2;
+    border-radius: 0px 0px 20px 20px;
+    padding-top: 37px;
+    padding-bottom: 17px;
+    margin-top: -22px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cards__filter-countries-icon {
+    background-image: url(../img/icon_filter.png);
+    background-repeat: no-repeat;
+    padding-top: 4px;
+    width: 15px;
+    height: 10px;
+
+  }
+
+  .cards__filter-countries-dots {
+    color: @basic_blue;
+    margin-top: -10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .cards__filter-countries {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @special_dark_blue;
+  }
+
+  .cards__bg {
+    background-color: @basic_blue_light;
+    padding-top: 80px;
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+    padding-bottom: 20px;
+  }
+
+  .cards__filter{
+    background-color: @basic_yellow;
+    width: 285px;
+    height: 814px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding-bottom: 22px;
+  }
+
+  .cards__filter-header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color: @basic_blue;
+    width: 145px;
+    padding-top: 25px;
+    margin-left: 25px;
+  }
+
+  .cards__filter-line {
+    background-color: #F3C72B;
+    width: 100% - 20px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cards__filter-section {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: @basic_blue;
+    margin-left: 25px;
+  }
+
+  .cards__filter-section-transport {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic_blue;
+    margin-left: 25px;
+  }
+
+  .cards__filter_transport {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1px;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
+
+  .cards__filter-plane {
+    background-image: url(../img/icon_plane.png);
+    background-repeat: no-repeat;
+    background-color: @white;
+    width: 32px;
+    height: 32px;
+    background-position-y: 4px;
+    background-position-x: 4px;
+    border-radius: 16px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+  }
+
+  .cards__filter-bus {
+    background-image: url(../img/icon_bus_blue.png);
+    background-repeat: no-repeat;
+    background-color: @white;
+    width: 32px;
+    height: 32px;
+    background-position-y: 4px;
+    background-position-x: 7px;
+    border-radius: 16px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+  }
+
+  .cards__filter-bike {
+    background-image: url(../img/icon_bicycle.png);
+    background-repeat: no-repeat;
+    background-color: @white;
+    width: 32px;
+    height: 32px;
+    background-position-y: 4px;
+    background-position-x: 4px;
+    border-radius: 16px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+  }
+
+  .cards__filter-legs {
+    background-image: url(../img/icon_run_blue.png);
+    background-repeat: no-repeat;
+    background-color: @white;
+    width: 32px;
+    height: 32px;
+    background-position-y: 4px;
+    background-position-x: 4px;
+    border-radius: 16px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden
+  }
+
+  .cards__filter-items-music {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards__filter-items-hobbie {
+    display: none;
+  }
+
+  .cards__filter-items-food {
+    display: none;
+  }
+
+  .cards__filter-items {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+  }
+
+  .cards__filter-item {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+  }
+
+  .cards__filter-items-mobile {
+    display: none;
+  }
+
+  .cards__filter-button-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cards__filter-button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 80px;
+    padding-left: 80px;
+    border: 0;
+    border-radius: 25px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #161C35;
+  }
+
+  .cards__filter-tablet-grid {
+    display: none;
+    flex-direction: row;
+    column-gap: 28px;
+    list-style-type: none;
+    margin-top: 58px;
+    margin-left: -92px;
+    margin-right: 50px;
+  }
+
+  .cards__filter-showall {
+    display: none;
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #192144;
+    margin-top: 40px;
+  }
+
+  .cards__filter-tablet-dots {
+    display: none;
+    color: @basic_blue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 20px;
+    margin-top: 28px;
+  }
+
+}

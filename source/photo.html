@@ -1,175 +1,345 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Погнали</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
-    <header>
-        <img src="https://via.placeholder.com/150x150" alt="Погнали?">
-        <button type="button">Меню</button>
-        <nav>
-          <ul>
-            <li><a href="">О сервисе</a></li>
-            <li><a href="">Направления</a></li>
-            <li><a href="">Попутчики</a></li>
-            <li><a href="">Авторизация</a></li>
-          </ul>
-        </nav>
-        <div>
-          <a href="tel:88005558628">8 800 555-86-28</a>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+  <body class="container">
+    <header class="header">
+      <div class="header__logo-grid">
+        <div class="header__logo"></div>
+        <a class="header__autorisation-tablet" href="">Авторизация</a>
+        <button class="header__menu-close" type="button">Меню</button>
+      </div>
+      <nav>
+        <ul class="header__menu-item">
+          <li><a href="">О сервисе</a></li>
+          <li><a href="">Направления</a></li>
+          <li><a href="">Попутчики</a></li>
+        </ul>
+      </nav>
+        <a class="header__autorisation" href="">Авторизация</a>
+      <div>
+        <div class="header__phone-grid">
+          <div class="header__phone"></div>
+          <a class="header__phone-number" href="tel:88005558628">8 800 555-86-28</a>
         </div>
-        <div>
-          <a href="facebook.com">facebook</a>
-          <a href="vk.com">VK</a>
-          <a href="instagram.com">Instagram</a>
+        <div class="header__mail-grid">
+          <div class="header__mail"></div>
+          <a class="header__mail-adress" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
+      </div>
+
+      <div class="header__social">
+        <a class="header__social-face" href="facebook.com">facebook</a>
+        <a class="header__social-vk" href="vk.com">VK</a>
+        <a class="header__social-inst" href="instagram.com">Instagram</a>
+      </div>
     </header>
 
-    <section>
-      <h1>Попутчики</h1>
-      <p>Фильтрация по странам</p>
-      <!-- Здесь должен быть фильтр -->
+    <section class="cards">
+      <div>
+        <div class="main__logo-grid">
+          <div class="main__logo"></div>
+          <button type="button" class="header__autorisation-menu">Авторизация</button>
+          <button class="main__menu-button" type="button">меню</button>
+        </div>
+
+        <div class="desktop__header-blue">
+          <div class="desktop__header-blue-logo"></div>
+          <div class="deskop__header-blue-grid">
+            <a href="" class="desktop__header-blue-line"></a>
+            <a href="" class="desktop__header-blue-text">О сервисе</a>
+            <a href="" class="desktop__header-blue-text">Направления</a>
+            <a href="" class="desktop__header-blue-text">Попутчики</a>
+          </div>
+          <div class="desktop__contacts">
+            <a class="desktop__contacts-phone" href="tel:88005558628">Позвонить</a>
+            <a class="desktop__contacts-email" href="mailto:mail@htmlacademy.ru">отправить email</a>
+            <a class="desktop__contacts-authorisation" href="">Авторизация</a>
+          </div>
+        </div>
+
+        <div class="cards__header-grid">
+          <h1 class="cards__header">Попутчики</h1>
+          <a class="cards__button-main"
+          href="index.html">На главную</a>
+          <div class="cards__button-main-arrow"></div>
+        </div>
+      </div>
     </section>
+    <div class="cards__underline"></div>
+    <div class="cards__filter-countries-grid">
+      <div class="cards__filter-countries-icon"></div>
+      <div class="cards__filter-countries">Фильтрация по странам</div>
+      <div class="cards__filter-countries-dots">...</div>
+          <ul class="cards__filter-tablet-grid">
+            <li class="cards__filter-tablet-europe">Европа</li>
+            <li class="cards__filter-tablet-asia">Азия</li>
+            <li class="cards__filter-tablet-america">Америка</li>
+            <li class="cards__filter-tablet-islands">Острова</li>
+          </ul>
+        <div class="cards__filter-showall">Показать все</div>
+        <div class="cards__filter-tablet-dots">...</div>
+    </div>
+    
+    <div class="cards__bg">
+      <section class="cards__filter">
+        <h3 class="visually-hidden">Выбор попутчика</h3>
+        <p class="cards__filter-header">Подберите идеального попутчика</p>
+        <div class="cards__filter-line-header"></div>
+        <form action="https://echo.htmlacademy.ru/" method="GET">
 
-    <section>
-      <h3 class="visually-hidden">Выбор попутчика</h3>
-      <p>Подберите идеального попутчика</p>
-      <form action="https://echo.htmlacademy.ru/" method="GET">
+          <div class="cards__filter-items-hobbie">
+            <p class="cards__filter-section">Хобби</p>
+            <div><input name="Gym" type="checkbox">Спортзал</div>
+            <div><input name="hookah" type="checkbox">Кальян</div>
+            <div><input name="sofa" type="checkbox">Диван</div>
+          </div>
 
-        <p>Хобби</p>
+          <div class="cards__filter-line"></div>
 
-        <p>Музыка</p>
-          <input name="HardRock" type="checkbox">Тяжелый рок
-          <input name="RussianRap" type="checkbox">Русский рэп
-          <input name="Evrodance" type="checkbox">Евродэнс
+          <div class="cards__filter-items-music">
+            <p class="cards__filter-section">Музыка</p>
+            <div><input class="cards__filter-item" name="HardRock" type="checkbox">Тяжелый рок</div>
+            <div><input class="cards__filter-item" name="RussianRap" type="checkbox">Русский рэп</div>
+            <div><input class="cards__filter-item" name="Evrodance" type="checkbox">Евродэнс</div>
+          </div>
 
-        <p>Еда</p>
+          <div class="cards__filter-line"></div>
 
-        <p>Транспорт</p>
-          <input name="Plane" type="checkbox">Самолет
-          <input name="Bus" type="checkbox">Автобус
-          <input name="Bike" type="checkbox">Велосипед
-          <input name="Walk" type="checkbox">Пешком
+          <div class="cards__filter-items-food">
+            <p class="cards__filter-section">Еда</p>
+            <div><input class="cards__filter-item" name="meat-eater" type="checkbox">Мясоед</div>
+            <div><input class="cards__filter-item" name="proper nutrition" type="checkbox">Сидит на ПП</div>
+            <div><input class="cards__filter-item" name="vegan" type="checkbox">Веган-сыроед</div>
+          </div>
 
+          <div class="cards__filter-line"></div>
 
-        <p>Левел
-          <!-- Тут должен быть кастомный мультиселект -->
-        </p>
+          <div class="cards__filter-section-transport">
+            <p class="cards__filter-section">Транспорт</p>
+            <div class="cards__filter_transport">
+              <a class="cards__filter-plane" href="">самолет</a>
+              <a class="cards__filter-bus" href="">Автобус</a>
+              <a class="cards__filter-bike" href="">Велосипед</a>
+              <a class="cards__filter-legs" href="">Пешком</a>
+            </div>
+          </div>
+          <div class="cards__filter-line"></div>
 
-        <input type="submit" value="Показать">
-      </form>
-    </section>
+          <p class="cards__filter-section">Левел
+            <!-- Тут должен быть кастомный мультиселект -->
+          </p>
 
-    <section>
+          <div class="cards__filter-line-button"></div>
+          <div class="cards__filter-button-grid">
+            <input class="cards__filter-button" type="submit" value="Показать">
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <section class="cards_bg">
       <h3 class="visually-hidden">Cards</h3>
-      <div>
-        <a href="#"><img src="https://via.placeholder.com/150x150" alt="Таня Фирсова"></a>
-        <a href="#">Таня Фирсова</a>
-        <p>1.5м</p>
-        <p>#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-        <p>Хочет посетить:</p>
-          <ul>
-            <li>Шри-Ланка</li>
-            <li>Тайланд</li>
-            <li>Сейшелы</li>
-          </ul>
-        <p>Транспорт</p>
-          <ul>
-            <li>самолет</li>
-            <li>Автобус</li>
-            <li>Велосипед</li>
-            <li>Пешком</li>
-          </ul>
-        <p>Левел: 99</p>
-        <a href="#">Позвать</a>
+
+      <div class="user-card user-card__grid">
+        <div class="user-card__photo-mobile-grid">
+          <a href="#"><div class="user-card__photo-mobile-tanya"></div></a>
+          <div class="user-card__header-grid ">
+            <div class="user-card__header-subgrid">
+              <a class="user-card__header" href="#">Таня Фирсова</a>
+              <div class="user-card__header-dot"></div>
+            </div>
+            <p class="user-card__counter">1.5м</p>
+            <p class="user-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+          </div>
+        </div>
+        <a class="user-card__button-tanya" href="#">Позвать</a>
+        <div class="user-card__heart-fill"></div>
+        <div class="user-card__countries-grid-tablet">
+          <p class="user-card__text">Хочет посетить:</p>
+            <div class="user-card__countries user-card__countries-grid">
+              <div class="user-card__countries-srilanka">Шри-Ланка</div>
+              <div class="user-card__countries-thai">Тайланд</div>
+              <div class="user-card__countries-seychells">Сейшелы</div>
+            </div>
+        </div>
+        <div class="user-card__transport-lvl-grid">
+          <div class="user-card__transport-grid-min">
+            <p class="user-card__text-hide">Транспорт</p>
+            <div class="user-card__transport user-card__transport-grid">
+              <div class="user-card__transport-plane-blue"></div>
+              <div class="user-card__transport-bus"></div>
+              <div class="user-card__transport-bike"></div>
+              <div class="user-card__transport-onfoot"></div>
+            </div>
+          </div>
+          <div class="user-card__lvl-grid">
+            <p class="user-card__text-hide">Левел:</p>
+            <p class="user-card__lvl-tanya">99</p>
+            <div class="user-card__tanya-lvl-underline"></div>
+            <p class="user-card__tanya-lvl2">level</p>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <a href="#"><img src="https://via.placeholder.com/150x150" alt="Петя Демин"></a>
-        <a href="#">Петя Демин</a>
-        <p>1500</p>
-        <p>#бургер #бар #футбол #концерт #крафт</p>
-        <p>Хочет посетить:</p>
-          <ul>
-            <li>Бельгия</li>
-            <li>Чехия</li>
-          </ul>
-        <p>Транспорт</p>
-          <ul>
-            <li>самолет</li>
-            <li>Автобус</li>
-            <li>Велосипед</li>
-            <li>Пешком</li>
-          </ul>
-        <p>Левел: 80</p>
-        <a href="#">Позвать</a>
+
+      <div class="user-card user-card__grid">
+        <div class="user-card__photo-mobile-grid">
+          <a href="#"><div class="user-card__photo-mobile-petya"></div></a>
+          <div class="user-card__header-grid ">
+            <div class="user-card__header-subgrid">
+              <a class="user-card__header" href="#">Петя Демин</a>
+              <div class="user-card__header-dot"></div>
+            </div>
+            <p class="user-card__counter">1500</p>
+            <p class="user-card__tags">#бургер #бар #футбол #концерт #крафт</p>
+          </div>
+        </div>
+        <a class="user-card__button-petya" href="#">Позвать</a>
+        <div class="user-card__heart"></div>
+        <div class="user-card__countries-grid-tablet">
+          <p class="user-card__text">Хочет посетить:</p>
+            <div class="user-card__countries user-card__countries-grid">
+              <div class="user-card__countries-belgium">Бельгия</div>
+              <div class="user-card__countries-czech">Чехия</div>
+            </div>
+        </div>
+        <div class="user-card__transport-lvl-grid">
+          <div class="user-card__transport-grid-min">
+            <p class="user-card__text-hide">Транспорт</p>
+            <div class="user-card__transport user-card__transport-grid">
+              <div class="user-card__transport-plane-blue"></div>
+              <div class="user-card__transport-bus-blue"></div>
+              <div class="user-card__transport-bike-blue"></div>
+              <div class="user-card__transport-onfoot"></div>
+            </div>
+          </div>
+          <div class="user-card__lvl-grid">
+            <p class="user-card__text-hide">Левел:</p>
+            <p class="user-card__lvl-petya">80</p>
+            <div class="user-card__tanya-lvl-underline"></div>
+            <p class="user-card__tanya-lvl2">level</p>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <a href="#"><img src="https://via.placeholder.com/150x150" alt="Марк Смолов"></a>
-        <a href="#">Марк Смолов</a>
-        <p>170</p>
-        <p>#рэп #тату #хайпбист #кроссовки #суприм</p>
-        <p>Хочет посетить:</p>
-          <ul>
-            <li>США</li>
-            <li>Австралия</li>
-            <li>Доминикана</li>
-          </ul>
-        <p>Транспорт</p>
-          <ul>
-            <li>самолет</li>
-            <li>Автобус</li>
-            <li>Велосипед</li>
-            <li>Пешком</li>
-          </ul>
-        <p>Левел: 25</p>
-        <a href="#">Позвать</a>
+      <div class="user-card user-card__grid">
+        <div class="user-card__photo-mobile-grid">
+          <a href="#"><div class="user-card__photo-mobile-mark"></div></a>
+          <div class="user-card__header-grid ">
+            <div class="user-card__header-subgrid">
+              <a class="user-card__header" href="#">Марк Смолов</a>
+              <div class="user-card__header-dot"></div>
+            </div>
+            <p class="user-card__counter">170</p>
+            <p class="user-card__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+          </div>
+        </div>
+        <a class="user-card__button-petya" href="#">Позвать</a>
+        <div class="user-card__heart"></div>
+        <div class="user-card__countries-grid-tablet">
+          <p class="user-card__text">Хочет посетить:</p>
+            <div class="user-card__countries user-card__countries-grid">
+              <div class="user-card__countries-usa">США</div>
+              <div class="user-card__countries-australia">Австралия</div>
+              <div class="user-card__countries-dominica">Доминика</div>
+            </div>
+        </div>
+        <div class="user-card__transport-lvl-grid">
+          <div class="user-card__transport-grid-min">
+            <p class="user-card__text-hide">Транспорт</p>
+            <div class="user-card__transport user-card__transport-grid">
+              <div class="user-card__transport-plane-blue"></div>
+              <div class="user-card__transport-bus"></div>
+              <div class="user-card__transport-bike-blue"></div>
+              <div class="user-card__transport-onfoot"></div>
+            </div>
+          </div>
+          <div class="user-card__lvl-grid">
+            <p class="user-card__text-hide">Левел:</p>
+            <p class="user-card__lvl-mark">25</p>
+            <div class="user-card__tanya-lvl-underline"></div>
+            <p class="user-card__tanya-lvl2">level</p>
+          </div>
+        </div>
       </div>
 
-      <div>
-        <a href="#"><img src="https://via.placeholder.com/150x150" alt="Лариса Роговая"></a>
-        <a href="#">Лариса Роговая</a>
-        <p>23</p>
-        <p>#образование #карьера #учеба #линкедин </p>
-        <p>Хочет посетить:</p>
-        <ul>
-          <li>Великобритания</li>
-          <li>Германия</li>
-        </ul>
-        <p>Транспорт</p>
-        <ul>
-          <li>самолет</li>
-          <li>Автобус</li>
-          <li>Велосипед</li>
-          <li>Пешком</li>
-        </ul>
-        <p>Левел: 50</p>
-        <a href="#">Позвать</a>
+      <div class="user-card user-card__grid">
+        <div class="user-card__photo-mobile-grid">
+          <a href="#"><div class="user-card__photo-mobile-larisa"></div></a>
+          <div class="user-card__header-grid ">
+            <div class="user-card__header-subgrid">
+              <a class="user-card__header" href="#">Лариса Роговая</a>
+              <div class="user-card__header-dot"></div>
+            </div>
+            <p class="user-card__counter">23</p>
+            <p class="user-card__tags">#образование #карьера #учеба #линкедин</p>
+          </div>
+        </div>
+        <a class="user-card__button-petya" href="#">Позвать</a>
+        <div class="user-card__heart"></div>
+        <div class="user-card__countries-grid-tablet">
+          <p class="user-card__text">Хочет посетить:</p>
+            <div class="user-card__countries user-card__countries-grid">
+              <div class="user-card__countries-britain">Великобритания</div>
+              <div class="user-card__countries-germany">Германия</div>
+            </div>
+        </div>
+        <div class="user-card__transport-lvl-grid">
+          <div class="user-card__transport-grid-min">
+            <p class="user-card__text-hide">Транспорт</p>
+            <div class="user-card__transport user-card__transport-grid">
+              <div class="user-card__transport-plane-blue"></div>
+              <div class="user-card__transport-bus-blue"></div>
+              <div class="user-card__transport-bike"></div>
+              <div class="user-card__transport-onfoot"></div>
+            </div>
+          </div>
+          <div class="user-card__lvl-grid">
+            <p class="user-card__text-hide">Левел:</p>
+            <p class="user-card__lvl-larisa">50</p>
+            <div class="user-card__tanya-lvl-underline"></div>
+            <p class="user-card__tanya-lvl2">level</p>
+          </div>
+        </div>
       </div>
 
-      <a href="#">Показать еще</a>
-      <a href="#">Назад</a>
-      <a href="#">Вперед</a>
+      <a class="user-card__showmore" href="#"><div class="user-card__showmore-plus"></div>Показать еще</a>
+      <div class="user-card__arrow-grid">
+        <a class="user-card__arrow-left" href="#"></a>
+        <a class="user-card__arrow-right" href="#"></a>
+      </div>
+      <div class="user-card__pages-grid">
+        <div class="user-card__pages">
+          <div class="user-card__pages-1">1</div>
+          <div class="user-card__pages-2">2</div>
+          <div class="user-card__pages-2">3</div>
+          <div class="user-card__pages-2">4</div>
+        </div>
+        <div class="user-card__arrow-tablet-grid">
+          <div class="user-card__arrow-tablet-left"></div>
+          <div class="user-card__arrow-tablet-right"></div>
+        </div>
+      </div>
     </section>
 
+    <footer class="footer">
+      <h2 class="visually-hidden">Погнали?</h2>
+      <div class="footer__logo"></div>
 
-
-    <footer>
-      <h2>Погнали?</h2>
-
-      <p>
-        <a href="facebook.com">facebook</a>
-        <a href="vk.com">VK</a>
-        <a href="instagram.com">Instagram</a>
+      <p class="footer__social-grid">
+        <a class="footer__social-face" href="facebook.com">facebook</a>
+        <a class="footer__social-vk" href="vk.com">VK</a>
+        <a class="footer__social-inst" href="instagram.com">Instagram</a>
       </p>
 
-
-
-      <p>Разработано
-        <a href="https://htmlacademy.ru/">HTML</a>
-      </p>
+      <div class="footer__line"></div>
+      <div class="footer__html-grid">
+        <p class="footer__html-developer">Разработано</p>
+        <a class="footer__html-logo" href="https://htmlacademy.ru/intensive/adaptive">HTML</a>
+      </div>
     </footer>
   </body>

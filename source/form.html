@@ -1,128 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Погнали</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body>
-    <header>
-      <img src="https://via.placeholder.com/150x150" alt="Погнали?">
-      <button type="button">Меню</button>
+  <body class="container">
+    <header class="header">
+      <div class="header__logo-grid">
+        <div class="header__logo"></div>
+        <button class="header__menu-close" type="button">Меню</button>
+      </div>
       <nav>
-        <ul>
+        <ul class="header__menu-item">
           <li><a href="">О сервисе</a></li>
           <li><a href="">Направления</a></li>
           <li><a href="">Попутчики</a></li>
-          <li><a href="">Авторизация</a></li>
         </ul>
       </nav>
+        <a class="header__autorisation" href="">Авторизация</a>
       <div>
-        <a href="tel:88005558628">8 800 555-86-28</a>
-        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        <div class="header__phone-grid">
+          <div class="header__phone"></div>
+          <a class="header__phone-number" href="tel:88005558628">8 800 555-86-28</a>
+        </div>
+        <div class="header__mail-grid">
+          <div class="header__mail"></div>
+          <a class="header__mail-adress" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
       </div>
-      <div>
-        <a href="facebook.com">facebook</a>
-        <a href="vk.com">VK</a>
-        <a href="instagram.com">Instagram</a>
+
+      <div class="header__social">
+        <a class="header__social-face" href="facebook.com">facebook</a>
+        <a class="header__social-vk" href="vk.com">VK</a>
+        <a class="header__social-inst" href="instagram.com">Instagram</a>
       </div>
-  </header>
+    </header>
 
-    <h1>Направления</h1>
-    <section>
-      <p>80 level</p>
-      <img src="https://via.placeholder.com/150x150" alt="photo">
-      <button>Сменить фото</button>
+    <div class="form-profile">
+      <div class="main__logo-grid">
+        <div class="main__logo"></div>
+        <button type="button" class="header__autorisation-menu">Авторизация</button>
+        <button class="main__menu-button" type="button">меню</button>
+      </div>
+      <h1 class="form-profile__header">Направления</h1>
+      <!-- <a class="cards__button-main" href="index.html">На главную</a> -->
+    </div>
+    <div class="form-profile__underline"></div>
 
-      <h3>Тэги</h3>
-      <textarea>#бургер #бар #футбол #концерт #крафт</textarea>
+    <section class="form-profile__bg">
+      <div class="form-profile__lvl-grid">
+        <div class="form-profile__lvl-ring"></div>
+        <div class="form-profile__photo"></div>
+      </div>
 
-      <h3>Транспорт</h3>
-      <a href="">Самолет</a>
-      <a href="">Автобус</a>
-      <a href="">Велосипед</a>
-      <a href="">Пешком</a>
+      <div class="form-profile__lvl-tablet-grid">
+          <div class="form-profile__lvl-tablet-ring"></div>
+          <div class="form-profile__filter-tablet-grid">
+            <div class="form-profile__filter_transport">
+              <a class="form-profile__filter-plane" href="">самолет</a>
+              <a class="form-profile__filter-bus" href="">Автобус</a>
+              <a class="form-profile__filter-bike" href="">Велосипед</a>
+              <a class="form-profile__filter-legs" href="">Пешком</a>
+            </div>
+            <p class="form-profile__filter-section">Транспорт</p>
+          </div>
+        <div class="form-profile__tablet-photo"></div>
+      </div>
+
+      <div><button class="form-profile__button">Сменить фото</button></div>
+
+      <h3 class="visually-hidden">Тэги</h3>
+      <div class="form-profile__textarea-grid">
+        <div class="form-profile__textarea-header">ТЭГИ</div>
+        <textarea class="form-profile__textarea">#бургер #бар #футбол #концерт #крафт</textarea>
+        <div class="form-profile__textarea-header-tablet">ТЭГИ</div>
+      </div>
+        <div class="form-profile__filter-grid">
+          <p class="form-profile__filter-section">Транспорт</p>
+          <div class="form-profile__filter_transport">
+            <a class="form-profile__filter-plane" href="">самолет</a>
+            <a class="form-profile__filter-bus" href="">Автобус</a>
+            <a class="form-profile__filter-bike" href="">Велосипед</a>
+            <a class="form-profile__filter-legs" href="">Пешком</a>
+          </div>
+        </div>
     </section>
 
-    <section>
-      <h3>Мои планы:</h3>
-        <div>
-          <p>1. Франция, Италия</p>
-          <p>26 мар — 29 мар</p>
-          <p>3 попутчика</p>
-          <a href="#">Изменить</a>
+    <section class="myplans__bg">
+      <h3 class="myplans__header">Мои планы:</h3>
+        <div class="myplans__countries">
+          <p class="myplans__countries-header">1. Франция, Италия</p>
+          <div class="myplans__countries-line"></div>
+          <div class="myplans__countries-flex">
+            <p class="myplans__countries-text">3 попутчика <div class="myplans__countries-dates">26 мар — 29 мар</div> </p>
+            <a  class="myplans__countries-button" href="#">Изменить</a>
+          </div>
         </div>
 
-        <div>
-          <p>2. Таиланд, Индонезия</p>
-          <p>1 попутчик</p>
-          <p>1 июл — 15 июл</p>
-          <a href="#">Изменить</a>
+        <div class="myplans__countries">
+          <p class="myplans__countries-header">2. Таиланд, Индонезия</p>
+          <div class="myplans__countries-line"></div>
+          <div class="myplans__countries-flex">
+            <p class="myplans__countries-text">1 попутчик <div class="myplans__countries-dates">1 июл — 15 июл</div></p>
+            <a class="myplans__countries-button" href="#">Изменить</a>
+          </div>
         </div>
     </section>
 
-    <h3>Добавить план</h3>
-
+    <section class="addplans__bg">
+      <h3 class="addplans__header">Добавить план</h3>
       <form action="https://echo.htmlacademy.ru/" method="GET">
-        <div id="step1">
-            <p>Шаг 1. Даты пребывания</p>
-            <p>Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
-            <p>Ищу попутчиков:</p>
-            <p>Чел.</p>
-            <input name="companion" type="number">
-            <button type="button">+</button>
-            <button type="button">-</button>
+        <div class="addplans__step1" id="step1">
+            <p class="addplans__step1-header">Шаг 1.<br>Даты пребывания</p>
+            <p class="addplans__step1-text">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <div class="addplans__step1-line"></div>
+            <div class="addplans__step1-form-grid">
+              <p class="addplans__step1-form-header">Ищу попутчиков:</p>
+              <p class="addplans__step1-form-people">Чел.</p>
+            </div>
+            <div class="addplans__step1-form-quantity">
+              <button type="button">-</button>
+              <input name="companion" type="number">
+              <button type="button">+</button>
+            </div>
 
-            <p>длительность:</p>
-            <p>Дн.</p>
-            <input name="days" type="number">
-            <button type="button">+</button>
-            <button type="button">-</button>
+            <div class="addplans__step1-form-grid">
+              <p class="addplans__step1-form-header">Длительность:</p>
+              <p class="addplans__step1-form-days">Дн.</p>
+            </div>
 
-            <p><input name="check" type="checkbox" value="with children">Можно с детьми</p>
+            <div class="addplans__step1-form-quantity">
+              <button type="button">-</button>
+              <input name="companion" type="number">
+              <button type="button">+</button>
+            </div>
 
-            <p class="visually_hidden">Выбор даты</p>
-            <!-- тут должен быть календарь выбора дат -->
+            <p class="addplans__step1-checkbox"><input name="check" type="checkbox" value="with children">Можно с детьми</p>
 
-            <a href="#step2">Следующий шаг</a>
+            <p class="visually-hidden">Выбор даты</p>
+
+            <a class="addplans__step1-next-step" href="#step2"><div>Следующий шаг</div><div class="addplans__step1-triangle"></div></a>
         </div>
 
-        <div id="step2">
-          <p>Шаг 2. Маршрут</p>
-          <p>Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+        <div class="addplans__step2" id="step2">
+          <p class="addplans__step2-header">Шаг 2. <br> Маршрут</p>
+          <p class="addplans__step2-text">Укажите страны, которые вы хотели посетить. Это может быть одна или сразу несколько.</p>
+          <div class="addplans__step1-line"></div>
           <!-- тут должен быть элемент выбора стран -->
-          <button type="button">Добавить страну</button>
-
-          <a href="#step3">Следующий шаг</a>
-          <a href="#step1">На шаг назад</a>
+          <a class="addplans__addcountry">Добавить страну</a>
+          <div class="addplans__step2-grid">
+            <a class="addplans__step2-next-step" href="#step3"><div>Следующий шаг</div><div class="addplans__step2-triangle"></div></a>
+            <a class="addplans__step2-step-back" href="#step1"><div class="addplans__step2-triangle-back"></div><div>На шаг назад</div></a>
+          </div>
         </div>
 
-        <div id="step3">
-          <p>Шаг 3. Развлечения</p>
-          <p>Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-          <p>Босния и Герцеговина</p>
-          <textarea name="Bosnia" placeholder="План действий"></textarea>
+        <div class="addplans__step3" id="step3">
+          <p class="addplans__step3-header">Шаг 3. <br> Развлечения</p>
+          <p class="addplans__step3-text">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+          <div class="addplans__step1-line"></div>
+          <p class="addplans__step3-form-header">Босния и Герцеговина</p>
+          <textarea class="addplans__step3-textarea-bosnia" name="Bosnia" placeholder="План действий"></textarea>
 
-          <p>Чехия</p>
-          <textarea name="Czech" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
-          <input type="submit" value="Отправить">
-          <a href="#step2" >На шаг назад</a>
+          <p class="addplans__step3-form-header">Чехия</p>
+          <textarea class="addplans__step3-textarea-czech" name="Czech" placeholder="Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все."></textarea>
+          <div class="addplans__step2-grid">
+            <button class="addplans__step2-next-step" type="submit">Отправить<div class="addplans__step2-triangle"></div></button>
+            <a class="addplans__step2-step-back" href="#step2"><div class="addplans__step2-triangle-back"></div><div>На шаг назад</div></a>
+          </div>
         </div>
       </form>
+    </section>
 
+    <footer class="footer">
+      <h2 class="visually-hidden">Погнали?</h2>
+      <div class="footer__logo"></div>
 
-    <footer>
-      <h2>Погнали?</h2>
-
-      <p>
-        <a href="facebook.com">facebook</a>
-        <a href="vk.com">VK</a>
-        <a href="instagram.com">Instagram</a>
+      <p class="footer__social-grid">
+        <a class="footer__social-face" href="facebook.com">facebook</a>
+        <a class="footer__social-vk" href="vk.com">VK</a>
+        <a class="footer__social-inst" href="instagram.com">Instagram</a>
       </p>
 
-
-
-      <p>Разработано
-        <a href="https://htmlacademy.ru/">HTML</a>
-      </p>
+      <div class="footer__line"></div>
+      <div class="footer__html-grid">
+        <p class="footer__html-developer">Разработано</p>
+        <a class="footer__html-logo" href="https://htmlacademy.ru/intensive/adaptive">HTML</a>
+      </div>
     </footer>
   </body>

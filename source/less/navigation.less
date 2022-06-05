@@ -1,0 +1,209 @@
+
+.navigation {
+  list-style-type: none;
+  margin-left: -15px;
+  margin-top: -70px;
+  margin-right: 25px;
+}
+
+.navigation__text-style {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic_blue;
+}
+
+.navigation__number {
+  color: @white;
+  margin-right: 25px;
+}
+
+.choose {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: @special_orange;
+  padding-top: 22px;
+  padding-left: 24px;
+  padding-bottom: 35px;
+  border-radius: 10px;
+}
+.learn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffa530;
+  padding-top: 22px;
+  padding-left: 24px;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  margin-top: -20px;
+}
+.find{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: @special_yellow_dark;
+  padding-top: 22px;
+  padding-left: 24px;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  margin-top: -20px;
+}
+.travel{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: @basic_yellow;
+  padding-top: 22px;
+  padding-left: 24px;
+  padding-bottom: 22px;
+  border-radius: 10px;
+  margin-top: -20px;
+}
+
+
+@media (min-width: @tablet_width) {
+  .navigation {
+    display: grid;
+    grid-template-columns: 344px 344px;
+    margin-left: 0px;
+  }
+  .choose {
+    display: flex;
+    flex-direction: column;
+    background-color: @special_orange;
+    padding-top: 31px;
+    padding-left: 32px;
+    padding-right: 167px;
+    padding-bottom: 51px;
+    margin-top: -20px;
+    border-radius: 10px 0px 0px 0px;
+    position: relative;
+    z-index: 1;
+    margin-right: -20px;
+  }
+  .learn {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffa530;
+    padding-top: 31px;
+    padding-left: 33px;
+    padding-bottom: 51px;
+    padding-right: 100px;
+    border-radius: 10px 10px 0px 0px;
+    position: relative;
+    z-index: 2;
+  }
+  .find{
+    display: flex;
+    flex-direction: column;
+    background-color: @special_yellow_dark;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-bottom: 58px;
+    padding-right: 142px;
+    border-radius: 0px 0px 0px 10px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 3;
+    margin-right: -20px;
+  }
+  .travel{
+    display: flex;
+    flex-direction: column;
+    background-color: @basic_yellow;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 140px;
+    padding-bottom: 58px;
+    border-radius: 0px 0px 10px 0px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 4;
+  }
+  .navigation__number {
+    color: @white;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .navigation {
+    display: flex;
+    position: absolute;
+    margin-top: -300px;
+    width: 1370px;
+  }
+
+  .navigation__text-style {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    color: @basic_blue;
+  }
+
+  .choose {
+    display: flex;
+    flex-direction: column;
+    background-color: @special_orange;
+    padding-top: 31px;
+    padding-left: 32px;
+    padding-right: 167px;
+    padding-bottom: 30px;
+    margin-top: -20px;
+    border-radius: 20px 0px 0px 20px;
+    position: relative;
+    z-index: 1;
+    margin-right: -20px;
+  }
+  .learn {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffa530;
+    padding-top: 31px;
+    padding-left: 33px;
+    padding-bottom: 30px;
+    padding-right: 100px;
+    margin-right: -20px;
+    border-radius: 20px 0px 0px 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .find{
+    display: flex;
+    flex-direction: column;
+    background-color: @special_yellow_dark;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-bottom: 30px;
+    padding-right: 142px;
+    border-radius: 20px 0px 0px 20px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 3;
+    margin-right: -40px;
+  }
+  .travel{
+    display: flex;
+    flex-direction: column;
+    background-color: @basic_yellow;
+    padding-top: 30px;
+    padding-left: 32px;
+    padding-right: 140px;
+    padding-bottom: 30px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 4;
+  }
+  .navigation__number {
+    position: absolute;
+    color: @white;
+    margin-top: 10px;
+    margin-left: 250px;
+  }
+}
+

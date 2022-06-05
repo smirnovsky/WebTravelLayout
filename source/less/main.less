@@ -1,0 +1,379 @@
+
+.main {
+  background-image: url(../img/globe-back-mobile@1x.jpg);
+  width: 320px;
+  z-index: -2;
+}
+
+.main__logo {
+  background-image: url(../img/logo-mobile-white@1x.png);
+  width: 96px;
+  height: 15px;
+  margin-left: 25px;
+  margin-top: 28px;
+}
+
+.main__menu-button {
+  margin-top: 32px;
+  margin-right: 25px;
+}
+
+.header__autorisation-menu {
+  display: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic_blue;
+  background-color: @basic_yellow;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-right: 81px;
+  padding-left: 78px;
+  border-radius: 30px;
+  margin-left: 25px;
+}
+
+.main__logo-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: @white;
+  margin-top: 51px;
+}
+
+.main__header-tablet {
+  display: none;
+}
+
+.main__traveller {
+  margin-left: 80px;
+}
+
+.main__contacts  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main__contacts-phone {
+  background-image: url(../img/icon_call.png);
+  background-repeat: no-repeat;
+  background-color: @special_orange;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position-y: 10px;
+  background-position-x: 10px;
+}
+
+.main__contacts-email {
+  background-image: url(../img/icon_mail2.png);
+  background-repeat: no-repeat;
+  background-color: @special_yellow_dark;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-position-y: 10px;
+  background-position-x: 10px;
+}
+
+.main__contacts-authorisation {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @special_dark_blue;
+  background-color: @basic_yellow;
+  padding-left: 29px;
+  padding-right: 28px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+
+.main__feedback-grid {
+  background-color:@special_dark_blue;
+  height: 285px;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+.main__feedback-grid-tablet {
+  display: none;
+}
+
+.main__feedback {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: @white;
+  margin-left: 50px;
+  margin-right: 109px;
+}
+
+.main__murat {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: @white;
+  margin-left: 50px;
+  margin-right: 109px;
+}
+
+
+@media (min-width: @tablet_width) {
+  .main {
+    background-image: url(../img/globe-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position-x: -360px;
+    background-position-y: 300px;
+    width: 768px;
+    height: 612px;
+    padding-bottom: 200px;
+  }
+
+  .main__logo {
+    display: block;
+    background-image: url(../img/logo-tablet-white@1x.png);
+    width: 166px;
+    height: 42px;
+    margin-left: 40px;
+    margin-top: 45px;
+  }
+
+  .main__menu-button {
+    display: none;
+    margin-top: 32px;
+    margin-right: 25px;
+  }
+
+  .header__autorisation-menu {
+    outline: none;
+    border: none;
+    display: block;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 29px;
+    padding-left: 29px;
+    border-radius: 30px;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+
+  .main__logo-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main__header-tablet {
+    background-color: @basic_blue;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: @white;
+    margin-top: 51px;
+  }
+
+  .main__header {
+    background-color: @basic_blue;
+    display: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: @white;
+    margin-top: -21px;
+  }
+
+  .main__traveller {
+    margin-left: 80px;
+    display: none;
+  }
+
+  .main__contacts  {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main__contacts-phone {
+    background-image: url(../img/icon_call.png);
+    background-repeat: no-repeat;
+    background-color: @special_orange;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position-y: 10px;
+    background-position-x: 10px;
+  }
+
+  .main__contacts-email {
+    background-image: url(../img/icon_mail2.png);
+    background-repeat: no-repeat;
+    background-color: @special_yellow_dark;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-position-y: 10px;
+    background-position-x: 10px;
+  }
+
+  .main__contacts-authorisation {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @special_dark_blue;
+    background-color: @basic_yellow;
+    padding-left: 29px;
+    padding-right: 28px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+  }
+
+  .main__feedback-grid {
+    display: none;
+    background-color:@special_dark_blue;
+    height: 285px;
+    margin-top: -50px;
+    padding-top: 50px;
+  }
+
+  .main__feedback-grid-tablet {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .main__feedback-subgrid-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__traveller-tablet {
+    margin-left: -140px;
+    margin-top: 80px;
+  }
+
+  .main__feedback {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    color: @white;
+    margin-left: 72px;
+    margin-top: 106px;
+    width: 264px;
+  }
+
+  .main__murat {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    color: @white;
+    margin-left: 73px;
+    width: 251px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .main {
+    display: none;
+    background-image: url(../img/globe-back-desktop@1x.jpg);
+    width: 100%;
+    height: 750px;
+    margin-top: 0px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .main__logo-grid {
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main__header-tablet {
+    background-color: @basic_blue;
+    display: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: @white;
+    margin-top: 51px;
+  }
+
+  .main__header {
+    background-color: @basic_blue;
+    display: none;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: @white;
+    margin-top: -21px;
+  }
+
+  .main__feedback-grid-tablet {
+    display: none;
+  }
+}

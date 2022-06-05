@@ -1,0 +1,746 @@
+.companions {
+  background-color: @basic_blue;
+  border-radius: 0px 0px 20px 20px;
+  padding-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+.companions__bg-square {
+  background-color: @special_dark_blue;
+  top: -30px;
+  left: 0px;
+  height: 132px;
+  width: 115px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.companions__bg-larisa {
+  background-image: url(../img/rogovaya-back-mobile@1x.png);
+  background-repeat: no-repeat;
+  background-position-y: 200px;
+  background-position-x: -10px;
+  width: 64px;
+  height: 280px;
+  position: absolute;
+  z-index: -1;
+}
+
+.companions__bg-smolov {
+  background-image: url(../img/smolov-back-desktop@1x.png);
+  background-repeat: no-repeat;
+  background-position-x: 160px;
+  background-position-y: 0px;
+  width: 320px;
+  height: 220px;
+  top: -30px;
+  position: absolute;
+  z-index: -1;
+}
+
+.companions__header {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: @special_orange;
+  margin-left: 49px;
+  margin-top: 50px;
+}
+
+.companions__description_normal {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: @white;
+  margin-left: 49px;
+}
+
+.companions__description_bold {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: @white;
+  margin-left: 49px;
+  margin-bottom: 50px;
+}
+
+.companions__image-tanya {
+  background-image: url(../img/firsova-desktop@1x.jpg);
+  width: 270px;
+  height: 270px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.companions__image-petya {
+  background-image: url(../img/demin-desktop@1x.jpg);
+  width: 270px;
+  height: 270px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.companions__tanya {
+  background-color: @white;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.companions__tanya_progressbar {
+  position: absolute;
+  margin-top: 20px;
+  background-image: url(../img/Circle\ Progress\ Bar.png);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.companions__tanya-lvl {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: @white;
+  margin-top: 13px;
+  margin-left: 16px;
+  margin-bottom: 0px;
+}
+
+.companions__tanya-lvl-underline {
+  width: 30px;
+  height: 2px;
+  background-color: @white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  opacity: 0.3;
+}
+
+.companions__tanya-lvl2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: @white;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.companions__tanya-card-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.companions__tanya_name {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: @basic_blue;
+  margin-top: 15px;
+}
+
+.companions__tanya_tags {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: @special_grey;
+  margin-top: 15px;
+  margin-left: 46px;
+  margin-right: 36px;
+}
+
+.companions__tanya_directions {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -12px;
+}
+
+.companions__tanya-srilanka {
+  background-image: url(../img/SriLanka.png);
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  width: 35px;
+  height: 25px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__tanya-thai {
+  background-image: url(../img/thai.png);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 25px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__tanya-seychells {
+  background-image: url(../img/Seychelles\ 1.png);
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  width: 35px;
+  height: 25px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__tanya_transport {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.companions__tanya-plane {
+  background-image: url(../img/icon_plane.png);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__tanya-bus {
+  background-image: url(../img/icon_bus.png);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__tanya-bike {
+  background-image: url(../img/icon_bicycle.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 21px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__tanya-legs {
+  background-image: url(../img/icon_run.png);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+// petya-------------------------------------------------
+
+.companions__petya {
+  background-color: @white;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.companions__petya_progressbar {
+  position: absolute;
+  margin-top: 20px;
+  background-image: url(../img/Circle\ Progress\ Bar\ petya.png);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.companions__petya-lvl {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  color: @white;
+  margin-top: 13px;
+  margin-left: 16px;
+  margin-bottom: 0px;
+}
+
+.companions__petya-lvl-underline {
+  width: 30px;
+  height: 2px;
+  background-color: @white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  opacity: 0.3;
+}
+
+.companions__petya-lvl2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: @white;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.companions__petya-card-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.companions__petya_name {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: @basic_blue;
+  margin-top: 15px;
+}
+
+.companions__petya_tags {
+  font-family: Blogger Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: @special_grey;
+  margin-top: 15px;
+  margin-left: 46px;
+  margin-right: 36px;
+}
+
+.companions__petya_directions {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: -12px;
+}
+
+.companions__petya-belgium {
+  background-image: url(../img/Belgium.png);
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  width: 35px;
+  height: 25px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__petya-czech {
+  background-image: url(../img/Czech.png);
+  background-repeat: no-repeat;
+  width: 35px;
+  height: 25px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__petya-seychells {
+  background-image: url(../img/Seychelles\ 1.png);
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  width: 35px;
+  height: 25px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__petya_transport {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.companions__petya-plane {
+  background-image: url(../img/icon_plane.png);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__petya-bus {
+  background-image: url(../img/icon_bus_blue.png);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__petya-bike {
+  background-image: url(../img/icon_bicycle.png);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 21px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+.companions__petya-legs {
+  background-image: url(../img/icon_run_blue.png);
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden
+}
+
+
+.companions__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: @basic_blue;
+  background-color: @basic_yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+  padding-left: 23px;
+  padding-top: 22px;
+  padding-bottom: 21px;
+  border-radius: 10px;
+}
+
+.companions__button-triangle {
+  background-image: url(../img/Polygon\ 1.png);
+  background-repeat: no-repeat;
+  width: 13px;
+  height: 12px;
+  margin-right: 23px;
+  background-position-y: 2px;
+  padding-bottom: 3px;
+}
+
+@media (min-width: @tablet_width) {
+  .companions {
+    background-color: @basic_blue
+  }
+
+  .companions__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .companions__tanya {
+    background-color: @white;
+    border-radius: 10px;
+    width: 270px;
+    margin-left: 75px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+
+  .companions__petya {
+    background-color: @white;
+    border-radius: 10px;
+    width: 270px;
+    margin-left: 35px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .companions__bg-square {
+    background-color: @special_dark_blue;
+    top: -70px;
+    left: 50px;
+    height: 212px;
+    width: 212px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+  }
+
+  .companions__bg-larisa {
+    background-image: url(../img/rogovaya-back-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: 0px;
+    left: 380px;
+    top: -70px;
+    width: 285px;
+    height: 285px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .companions__bg-smolov {
+    background-image: url(../img/smolov-back-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position-x: 160px;
+    background-position-y: 160px;
+    width: 320px;
+    height: 420px;
+    top: 120px;
+    left: -110px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .companions__header {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    color: @special_orange;
+    margin-top: 141px;
+    margin-left: 73px;
+  }
+
+  .companions__description_normal {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    color: @white;
+    margin-left: 73px;
+    margin-top: 55px;
+    width: 427px;
+  }
+
+  .companions__description_bold {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: @white;
+    margin-left: 73px;
+    margin-top: 39px;
+    width: 260px;
+  }
+
+  .companions__button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-top: 25px;
+    margin-bottom: 75px;
+    padding-left: 23px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    border-radius: 10px;
+  }
+
+  .companions__button-triangle {
+    background-image: url(../img/Polygon\ 1.png);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    margin-right: 23px;
+    background-position-y: 2px;
+    padding-bottom: 3px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .companions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: @basic_blue;
+    border-radius: 0px 0px 40px 40px;
+    padding-bottom: 25px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .companions__description_bold {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: @white;
+  }
+
+  .companions__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 134px;
+  }
+
+  .companions__tanya {
+    background-color: @white;
+    border-radius: 20px;
+    width: 270px;
+    margin-left: 75px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+
+  .companions__petya {
+    background-color: @white;
+    border-radius: 20px;
+    width: 270px;
+    margin-left: 35px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .companions__image-tanya {
+    background-image: url(../img/firsova-desktop@1x.jpg);
+    width: 270px;
+    height: 270px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .companions__image-petya {
+    background-image: url(../img/demin-desktop@1x.jpg);
+    width: 270px;
+    height: 270px;
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .companions__bg-square {
+    background-color: @special_dark_blue;
+    top: 60px;
+    left: 50px;
+    height: 212px;
+    width: 212px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 20px;
+  }
+
+  .companions__bg-larisa {
+    background-image: url(../img/rogovaya-back-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+    background-position-x: 0px;
+    left: 180px;
+    top:  400px;
+    width: 285px;
+    height: 285px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .companions__bg-smolov {
+    background-image: url(../img/smolov-back-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position-x: 160px;
+    background-position-y: 160px;
+    width: 320px;
+    height: 420px;
+    top: -30px;
+    left: 420px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .companions__header {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    color: @special_orange;
+    margin-top: 141px;
+    margin-left: 130px;
+  }
+
+  .companions__description_normal {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 34px;
+    color: @white;
+    margin-left: 130px;
+    margin-top: 55px;
+    width: 427px;
+  }
+
+  .companions__description_bold {
+    font-family: Blogger Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 24px;
+    color: @white;
+    margin-left: 130px;
+    margin-top: 39px;
+    width: 260px;
+  }
+
+  .companions__button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-right: 340px;
+    margin-top: -30px;
+    margin-bottom: 75px;
+    padding-left: 23px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    border-radius: 15px;
+  }
+
+  .companions__button-triangle {
+    background-image: url(../img/Polygon\ 1.png);
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 12px;
+    margin-right: 23px;
+    background-position-y: 2px;
+    padding-bottom: 3px;
+  }
+}

@@ -1,0 +1,375 @@
+.header {
+  background-color: @white;
+  text-decoration: none;
+}
+
+.header__logo {
+  background-image: url(../img/logo-mobile-blue@1x.png);
+  width: 100px;
+  height: 15px;
+  margin-left: 25px;
+  margin-top: 27px;
+}
+
+.header__logo-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__menu-close {
+  margin-top: 25px;
+  margin-right: 28px;
+}
+
+.header__menu-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic_blue;
+  list-style-type: none;
+  margin-top: 76px;
+  margin-right: 55px;
+  margin-bottom: 51px;
+}
+
+.header__autorisation-tablet {
+  display: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic_blue;
+  background-color: @basic_yellow;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-right: 41px;
+  padding-left: 38px;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-right: 25px;
+}
+
+.header__autorisation {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @basic_blue;
+  background-color: @basic_yellow;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-right: 81px;
+  padding-left: 78px;
+  border-radius: 30px;
+  margin-left: 25px;
+}
+
+.header__contacts {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  color: @basic_blue;
+}
+
+.header__phone-grid {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  margin-top: 51px;
+}
+
+.header__phone {
+  background-image: url(../img/icon_telephone.png);
+  margin-left: 25px;
+  margin-top: -14px;
+  background-repeat: no-repeat;
+  background-color: @basic_blue;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  background-position-y: 13px;
+  background-position-x: 13px;
+}
+
+.header__phone-number {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: @basic_blue;
+}
+
+.header__mail-grid {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  margin-top: 15px;
+}
+
+.header__mail {
+  background-image: url(../img/icon_mail.png);
+  margin-left: 25px;
+  margin-top: -14px;
+  background-repeat: no-repeat;
+  background-color: @basic_blue;
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  background-position-y: 10px;
+  background-position-x: 10px;
+}
+
+.header__mail-adress {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @basic_blue;
+}
+
+.header__social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 53px;
+  padding-bottom: 41px;
+}
+
+.header__social-face {
+  background-image: url(../img/facebook.svg);
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 11px;
+  margin-right: 25px;
+}
+
+.header__social-vk {
+  background-image: url(../img/vk.svg);
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 23px;
+}
+
+.header__social-inst {
+  background-image: url(../img/instagram.svg);
+  background-repeat: no-repeat;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 18px;
+  height: 18px;
+  margin-left: 25px;
+}
+
+@media (min-width: @tablet_width) {
+  .header {
+    background-color: @white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 73px;
+  }
+
+  .header__logo {
+    background-image: url(../img/logo-tablet-blue@1x.png);
+    width: 164px;
+    height: 42px;
+    margin-left: 25px;
+    margin-top: 27px;
+  }
+
+  .header__logo-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__menu-close {
+    margin-top: 25px;
+    margin-right: 28px;
+    display: none;
+  }
+
+  .header__menu-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 71px;
+    text-align: left;
+    text-transform: uppercase;
+    color: @basic_blue;
+    list-style-type: none;
+    margin-top: 76px;
+    margin-left: 97px;
+    margin-bottom: 71px;
+  }
+
+  .header__autorisation-tablet {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-right: 41px;
+    padding-left: 38px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-right: 25px;
+  }
+
+  .header__autorisation {
+    display: none;
+    position: absolute;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: @basic_blue;
+    background-color: @basic_yellow;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    padding-right: 41px;
+    padding-left: 38px;
+    border-radius: 30px;
+    margin-left: 400px;
+    margin-top: 40;
+  }
+
+  .header__contacts {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: @basic_blue;
+  }
+
+  .header__phone-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    margin-top: 51px;
+    margin-top: 144px;
+  }
+
+  .header__phone {
+    background-image: url(../img/icon_telephone_tablet.svg);
+    margin-left: 97px;
+    margin-top: -14px;
+    background-repeat: no-repeat;
+    background-color: @basic_blue;
+    width: 68px;
+    height: 68px;
+    border-radius: 40px;
+    background-position-y: 21px;
+    background-position-x: 21px;
+  }
+
+  .header__phone-number {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    color: @basic_blue;
+    margin-top: 10px;
+  }
+
+  .header__mail-grid {
+    display: flex;
+    flex-direction: row;
+    column-gap: 16px;
+    margin-top: 15px;
+  }
+
+  .header__mail {
+    background-image: url(../img/icon_mail_tablet.svg);
+    margin-left: 97px;
+    margin-top: -14px;
+    background-repeat: no-repeat;
+    background-color: @basic_blue;
+    width: 68px;
+    height: 68px;
+    border-radius: 40px;
+    background-position-y: 15px;
+    background-position-x: 15px;
+  }
+
+  .header__mail-adress {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: @basic_blue;
+    margin-top: 10px;
+  }
+
+  .header__social {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 123px;
+    margin-top: 129px;
+    padding-bottom: 41px;
+  }
+
+  .header__social-face {
+    background-image: url(../img/icon_facebook_tablet.svg);
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 14px;
+    height: 28px;
+    margin-right: 33px;
+  }
+
+  .header__social-vk {
+    background-image: url(../img/icon_vkontakte_tablet.svg);
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 31px;
+    height: 16px;
+  }
+
+  .header__social-inst {
+    background-image: url(../img/icon_instagram_tablet.svg);
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 24px;
+    height: 24px;
+    margin-left: 33px;
+  }
+}
+
+@media (min-width: @desktop_width) {
+  .header {
+    background-color: @white;
+    text-decoration: none;
+    display: none;
+  }
+}
